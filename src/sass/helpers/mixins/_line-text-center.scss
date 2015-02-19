@@ -1,0 +1,4 @@
+@mixin line-text-center($value){
+    height: $value;
+    line-height: $value;
+}

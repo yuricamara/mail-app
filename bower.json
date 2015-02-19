@@ -1,0 +1,6 @@
+{
+  "name": "teste-frontend-mail-app",
+  "dependencies": {
+    "normalize.css": "~3.0.2"
+  }
+}
