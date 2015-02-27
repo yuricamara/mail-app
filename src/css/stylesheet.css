@@ -30,6 +30,9 @@ html {
   font: 62.5% 'Raleway', sans-serif; }
 
 /**********************
+_layout.scss
+**********************/
+/**********************
 _states.scss
 **********************/
 .is-display-none-accessible {
@@ -43,9 +46,5 @@ _states.scss
 .is-display-none-inaccessible {
   display: none;
   visibility: hidden; }
-
-/**********************
-_cross-browsing.scss
-**********************/
 
 /*# sourceMappingURL=stylesheet.css.map */

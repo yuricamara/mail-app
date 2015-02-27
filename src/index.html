@@ -12,42 +12,42 @@
 <body>
 
   <noscript>
-    <style scoped>
-    </style>
-    <div>
-      <h1>Javascript is required!</h1>
-      <p>You must have Javascript enabled to run this app properly.</p>
+    <div class="m-noscript">
+      <h1 class="m-noscript_title">Javascript is required!</h1>
+      <p class="m-noscript_information">You must have Javascript enabled to run this app properly.</p>
     </div>
   </noscript>
 
-  <!-- User photo (small screens)-->
-  <img src="http://placehold.it/50x50" alt="User image">
-  <!-- Compose Mail (big screens)-->
-  <button hidden type="button">
-    Compose mail
-  </button>
 
-  <aside>
-<!-- Labels -->
-    <h3>
-      Labels
-    </h3>
-    <ul>
-      <li><a>Clients</a></li>
-      <li><a>Social</a></li>
-      <li><a>Family</a></li>
-      <li><a>Friends</a></li>
-    </ul>
-<!-- / Labels -->
+  <aside class="l-aside">
+    <!-- big screens-->
+    <button hidden class="m-btn m-btn--compose-mail" type="button">
+      Compose mail
+    </button>
+    <!-- small screens-->
+    <div class="m-user-picture">
+      <img class="m-user-picture_img" src="http://placehold.it/50x50" alt="User image">
+    </div>
+
+    <div class="m-labels">
+      <h3 class="m-labels_title">
+        Labels
+      </h3>
+      <ul class="m-labels_itens">
+        <li><a>Clients</a></li>
+        <li><a>Social</a></li>
+        <li><a>Family</a></li>
+        <li><a>Friends</a></li>
+      </ul>
+    </div>
   </aside>
 
 
-  <main role="main">
-    <!-- Inbox E-mail List-->
-    <article>
-      <header>
-        <!-- Menu (small screens)-->
-        <div>
+  <main class="l-main" role="main">
+    <article class="m-mail-list l-mail-list">
+      <header class="m-mail-list_header">
+        <!-- small screens-->
+        <div class="m-menu m-menu--mail-list-ss">
           <button type="button" id="menu_main-actions" aria-expanded="false">
             Choose an item
           </button>
@@ -57,15 +57,25 @@
                 Compose Mail
               </a>
             </li>
+            <li role="presentation">
+              <a role="menuitem">
+                Inbox
+              </a>
+            </li>
+            <li role="presentation">
+              <a role="menuitem">
+                Sent
+              </a>
+            </li>
           </ul>
         </div>
 
-        <h2>
+        <h2 class="m-mail-list_title">
           Inbox <span hidden>(14 unread)</span>
         </h2>
 
-        <!-- Menu aside Inbox title(big screens) -->
-        <div hidden>
+        <!-- big screens -->
+        <div hidden class="m-menu-dd">
           <button type="button" id="menu_boxes" aria-expanded="false">
             Choose a box
           </button>
@@ -79,23 +89,24 @@
         </div>
       </header>
 
-      <!-- Mail short -->
-      <section>
+      <section class="m-short-mail">
 
         <!-- Acessibility reference -->
-        <h3>E-mail number 1</h3>
+        <h3 class="m-short-mail_title">E-mail number 1</h3>
 
         <!-- Sender photo (small screens)-->
-        <img src="http://placehold.it/100x100" alt="David Taylor image">
+        <div class="m-user-picture m-user-picture--short-mail">
+          <img class="m-user-picture_img" src="http://placehold.it/100x100" alt="David Taylor image">
+        </div>
 
         <!-- Label icon -->
-        <a>Client Label</a>
+        <a class="m-short-mail_label">Client Label</a>
 
         <!-- Sender name -->
-        <p>David Taylor</p>
+        <p class="m-short-mail_sender">David Taylor</p>
 
         <!-- Attachment icon -->
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="15" height="15" aria-labelledby="svgicon_clips-title svgicon_clips-desc">
+        <svg class="m-svgicon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="15" height="15" aria-labelledby="svgicon_clips-title svgicon_clips-desc">
           <title id="svgicon_clips-title">Title</title>
           <desc id="svgicon_clips-desc">Description</desc>
           <a xlink:href="#">
@@ -106,7 +117,7 @@
           Sep 20
         </time>
         <!-- Star Icon -->
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="15" height="15" aria-labelledby="svgicon_star-title-1 svgicon_star-desc-1">
+        <svg class="m-svgicon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="15" height="15" aria-labelledby="svgicon_star-title-1 svgicon_star-desc-1">
           <title id="svgicon_star-title-1">Title</title>
           <desc id="svgicon_star-desc-1">Description</desc>
           <a xlink:href="#">
@@ -114,11 +125,17 @@
           </a>
         </svg>
         <!-- Subject -->
-        <p>
+        <p class="m-short-mail_subject">
           <span>Development Files</span> - Lorem ipsum dolor sit amet.
         </p>
       </section>
     </article>
+
+
+
+
+
+
 
     <!-- Opened E-mail -->
     <article hidden>

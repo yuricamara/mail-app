@@ -1,7 +1,8 @@
 Teste frontend - Mail App
 =====
 
-## Build
+Build
+-----------------
 
 **SASS**
 
@@ -15,7 +16,8 @@ Teste frontend - Mail App
 2. Acesse a pasta src no console do S.O.
 3. Execute: browser-sync start --server --files "css/*.css"
 
-## Arquitetura CSS
+Arquitetura CSS
+-----------------
 
 ### Ordem das propriedades
 
@@ -30,3 +32,36 @@ Teste frontend - Mail App
 4. Fonte e texto: ```font-family```, ```font-size```, ```line-height```, ```text-decoration```, ```color```, ```text-align```.
 
 5. Design: ```background```, ```transform```, ```box-shadow```, ```border-radius```.
+
+### Prefixos das Classes
+
+* Layout: l
+* Estado: is ou has
+* Módulos: m
+* Temas: t
+
+### Classes dos módulos
+
+```
+m-{módulo}
+m-{módulo}--{especificação}
+m-{módulo}_{elemento}
+m-{módulo}_{elemento}--{especificação}
+```
+Exemplos
+
+```css
+.m-contact{}
+.m-contact--first{}
+.m-contact_field{}
+.m-contact_field--email{}
+```
+
+### Ordem das classes
+
+estado módulo layout tema
+
+### Abreviações usadas nas classes
+
+ss - telas pequenas (small screens)
+bs - telas grandes (big screen)
