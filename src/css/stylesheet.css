@@ -1,7 +1,4 @@
 /**********************
-_project-settings.scss
-**********************/
-/**********************
   _base.scss
 **********************/
 html, body, div, span,
@@ -66,5 +63,29 @@ _states.scss
 .is-display-none-inaccessible {
   display: none;
   visibility: hidden; }
+
+/**********************
+_m-labels.scss
+**********************/
+.m-labels {
+  background-color: #717171; }
+
+/**********************
+_m-mail-list.scss
+**********************/
+.m-mail-list_header {
+  background-color: #292929; }
+
+/**********************
+_m-short-mail.scss
+**********************/
+.m-short-mail {
+  background-color: #292929; }
+
+/**********************
+_m-user-picture.scss
+**********************/
+.m-user-picture {
+  background-color: #292929; }
 
 /*# sourceMappingURL=stylesheet.css.map */

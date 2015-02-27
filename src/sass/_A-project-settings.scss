@@ -1,17 +1,13 @@
-/**********************
-_project-settings.scss
-**********************/
-
 $palettes: (
-  green: (
-    base: #FADA90
-  ),
-  grey: (
+  main: (
     lightest: white ,
     light: #919191,
     base: #717171,
     dark: #292929,
     darkest: black
+  ),
+  secondary: (
+    base: #90fab1
   )
 );
 
