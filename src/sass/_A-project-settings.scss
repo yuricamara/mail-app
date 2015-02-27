@@ -1,1 +1,23 @@
+/**********************
+_project-settings.scss
+**********************/
+
+$palettes: (
+  green: (
+    base: #FADA90
+  ),
+  grey: (
+    lightest: white ,
+    light: #919191,
+    base: #717171,
+    dark: #292929,
+    darkest: black
+  )
+);
+
+@function palette($palette, $tone: 'base') {
+  @return map-get(map-get($palettes, $palette), $tone);
+}
+
+//e.g. color: palette(green); or color: palette(grey, dark);
 
