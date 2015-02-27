@@ -29,9 +29,26 @@ time, mark, audio, video {
 html {
   font: 62.5% 'Raleway', sans-serif; }
 
+ul {
+  list-style: none; }
+
 /**********************
 _layout.scss
 **********************/
+.l-wrap {
+  margin: 0 auto;
+  max-width: 940px;
+  width: 100%; }
+
+.l-aside {
+  min-width: 50px;
+  width: 20%;
+  float: left; }
+
+.l-main {
+  width: 80%;
+  float: left; }
+
 /**********************
 _states.scss
 **********************/

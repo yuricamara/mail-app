@@ -10,244 +10,243 @@
   <title>Mail App</title>
 </head>
 <body>
-
-  <noscript>
-    <div class="m-noscript">
-      <h1 class="m-noscript_title">Javascript is required!</h1>
-      <p class="m-noscript_information">You must have Javascript enabled to run this app properly.</p>
-    </div>
-  </noscript>
-
-
-  <aside class="l-aside">
-    <!-- big screens-->
-    <button hidden class="m-btn m-btn--compose-mail" type="button">
-      Compose mail
-    </button>
-    <!-- small screens-->
-    <div class="m-user-picture">
-      <img class="m-user-picture_img" src="http://placehold.it/50x50" alt="User image">
-    </div>
-
-    <div class="m-labels">
-      <h3 class="m-labels_title">
-        Labels
-      </h3>
-      <ul class="m-labels_itens">
-        <li><a>Clients</a></li>
-        <li><a>Social</a></li>
-        <li><a>Family</a></li>
-        <li><a>Friends</a></li>
-      </ul>
-    </div>
-  </aside>
+  <div class="l-wrap">
+    <noscript>
+      <div class="m-noscript">
+        <h1 class="m-noscript_title">Javascript is required!</h1>
+        <p class="m-noscript_information">You must have Javascript enabled to run this app properly.</p>
+      </div>
+    </noscript>
 
 
-  <main class="l-main" role="main">
-    <article class="m-mail-list l-mail-list">
-      <header class="m-mail-list_header">
-        <!-- small screens-->
-        <div class="m-menu m-menu--mail-list-ss">
-          <button type="button" id="menu_main-actions" aria-expanded="false">
-            Choose an item
-          </button>
-          <ul role="menu" aria-labelledby="menu_main-actions">
-            <li role="presentation">
-              <a role="menuitem">
-                Compose Mail
-              </a>
-            </li>
-            <li role="presentation">
-              <a role="menuitem">
-                Inbox
-              </a>
-            </li>
-            <li role="presentation">
-              <a role="menuitem">
-                Sent
-              </a>
-            </li>
-          </ul>
-        </div>
+    <aside class="l-aside">
+      <!-- big screens-->
+      <button hidden class="m-btn m-btn--compose-mail" type="button">
+        Compose mail
+      </button>
+      <!-- small screens-->
+      <div class="m-user-picture">
+        <img class="m-user-picture_img" src="http://placehold.it/30x30" alt="User image">
+      </div>
 
-        <h2 class="m-mail-list_title">
-          Inbox <span hidden>(14 unread)</span>
-        </h2>
-
-        <!-- big screens -->
-        <div hidden class="m-menu-dd">
-          <button type="button" id="menu_boxes" aria-expanded="false">
-            Choose a box
-          </button>
-          <ul role="menu" aria-labelledby="menu_boxes">
-            <li role="presentation">
-              <a role="menuitem">
-                Inbox
-              </a>
-            </li>
-          </ul>
-        </div>
-      </header>
-
-      <section class="m-short-mail">
-
-        <!-- Acessibility reference -->
-        <h3 class="m-short-mail_title">E-mail number 1</h3>
-
-        <!-- Sender photo (small screens)-->
-        <div class="m-user-picture m-user-picture--short-mail">
-          <img class="m-user-picture_img" src="http://placehold.it/100x100" alt="David Taylor image">
-        </div>
-
-        <!-- Label icon -->
-        <a class="m-short-mail_label">Client Label</a>
-
-        <!-- Sender name -->
-        <p class="m-short-mail_sender">David Taylor</p>
-
-        <!-- Attachment icon -->
-        <svg class="m-svgicon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="15" height="15" aria-labelledby="svgicon_clips-title svgicon_clips-desc">
-          <title id="svgicon_clips-title">Title</title>
-          <desc id="svgicon_clips-desc">Description</desc>
-          <a xlink:href="#">
-            <rect width="15" height="15"></rect>
-          </a>
-        </svg>
-        <time datetime="2014-09-20">
-          Sep 20
-        </time>
-        <!-- Star Icon -->
-        <svg class="m-svgicon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="15" height="15" aria-labelledby="svgicon_star-title-1 svgicon_star-desc-1">
-          <title id="svgicon_star-title-1">Title</title>
-          <desc id="svgicon_star-desc-1">Description</desc>
-          <a xlink:href="#">
-            <rect width="15" height="15"></rect>
-          </a>
-        </svg>
-        <!-- Subject -->
-        <p class="m-short-mail_subject">
-          <span>Development Files</span> - Lorem ipsum dolor sit amet.
-        </p>
-      </section>
-    </article>
-
-
-
-
-
-
-
-    <!-- Opened E-mail -->
-    <article hidden>
-
-      <!-- Acessibility reference -->
-      <h2>Opened email</h2>
-
-      <!-- Star -->
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="15" height="15" aria-labelledby="svgicon_star-title-2 svgicon_star-desc-2">
-        <title id="svgicon_star-title-2">Title</title>
-        <desc id="svgicon_star-desc-2">Description</desc>
-        <a xlink:href="#">
-          <rect width="15" height="15"></rect>
-        </a>
-      </svg>
-
-      <!-- Title -->
-      <p>Development Files</p>
-
-      <!-- Answer Icon -->
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="15" height="15" aria-labelledby="svgicon_answer-title svgicon_answer-desc">
-        <title id="svgicon_answer-title">Title</title>
-        <desc id="svgicon_answer-desc">Description</desc>
-        <a xlink:href="#">
-          <rect width="15" height="15"></rect>
-        </a>
-      </svg>
-
-      <!-- Trash Icon -->
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="15" height="15" aria-labelledby="svgicon_trash-title svgicon_trash-desc">
-        <title id="svgicon_trash-title">Title</title>
-        <desc id="svgicon_trash-desc">Description</desc>
-        <a xlink:href="#">
-          <rect width="15" height="15"></rect>
-        </a>
-      </svg>
-
-      <!-- Sender Photo -->
-      <img src="http://placehold.it/50x50" alt="David Taylor image">
-
-      <!-- Sender Name -->
-      <p>
-        <span>David Taylor</span> to me
-      </p>
-
-      <!-- Menu -->
-      <div>
-        <button type="button" id="menu_received-mail-actions" aria-expanded="false">
-          Choose an action
-        </button>
-        <ul role="menu" aria-labelledby="menu_received-mail-actions">
-          <li role="presentation">
-            <a role="menuitem">
-              Answer
-            </a>
-          </li>
+      <div class="m-labels">
+        <h3 class="m-labels_title">
+          Labels
+        </h3>
+        <ul class="m-labels_itens">
+          <li><a>Clients</a></li>
+          <li><a>Social</a></li>
+          <li><a>Family</a></li>
+          <li><a>Friends</a></li>
         </ul>
       </div>
+    </aside>
 
-      <!-- Attachment Icon -->
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="15" height="15" aria-labelledby="title desc">
-        <title id="title">Title</title>
-        <desc id="desc">Description</desc>
-        <a xlink:href="#">
-          <rect width="15" height="15"></rect>
-        </a>
-      </svg>
 
-      <!-- Date -->
-      <time datetime="2014-09-20T23:30">
-        Today, Sep 20, 11:30 PM
-      </time>
+    <main class="l-main" role="main">
+      <article class="m-mail-list l-mail-list">
+        <header class="m-mail-list_header">
+          <!-- small screens-->
+          <div class="m-menu m-menu--mail-list-ss">
+            <button type="button" id="menu_main-actions" aria-expanded="false">
+              Choose an item
+            </button>
+            <ul role="menu" aria-labelledby="menu_main-actions">
+              <li role="presentation">
+                <a role="menuitem">
+                  Compose Mail
+                </a>
+              </li>
+              <li role="presentation">
+                <a role="menuitem">
+                  Inbox
+                </a>
+              </li>
+              <li role="presentation">
+                <a role="menuitem">
+                  Sent
+                </a>
+              </li>
+            </ul>
+          </div>
 
-      <!-- Content -->
-      <p>
-        Hello Megan,
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, eius fugit molestias quod quo, esse officiis asperiores. Consequatur et optio, recusandae enim laborum assumenda harum saepe, excepturi sint tenetur quae autem sequi. Mollitia eaque harum vero fuga est tenetur minus, repellendus quas! Alias, quae. Eos illum, debitis voluptatem. Aliquam, voluptatum!
-      </p>
-      <div>
+          <h2 class="m-mail-list_title">
+            Inbox <span hidden>(14 unread)</span>
+          </h2>
 
-      <!-- Below Content -->
+          <!-- big screens -->
+          <div hidden class="m-menu-dd">
+            <button type="button" id="menu_boxes" aria-expanded="false">
+              Choose a box
+            </button>
+            <ul role="menu" aria-labelledby="menu_boxes">
+              <li role="presentation">
+                <a role="menuitem">
+                  Inbox
+                </a>
+              </li>
+            </ul>
+          </div>
+        </header>
+
+        <section class="m-short-mail">
+
+          <!-- Acessibility reference -->
+          <h3 class="m-short-mail_title">E-mail number 1</h3>
+
+          <!-- small screens-->
+          <div class="m-user-picture m-user-picture--short-mail">
+            <img class="m-user-picture_img" src="http://placehold.it/40x40" alt="David Taylor image">
+          </div>
+
+          <a class="m-short-mail_label">Client Label</a>
+
+          <p class="m-short-mail_sender">David Taylor</p>
+
+          <!-- Attachment icon -->
+          <svg class="m-svgicon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="15" height="15" aria-labelledby="svgicon_clips-title svgicon_clips-desc">
+            <title id="svgicon_clips-title">Title</title>
+            <desc id="svgicon_clips-desc">Description</desc>
+            <a xlink:href="#">
+              <rect width="15" height="15"></rect>
+            </a>
+          </svg>
+          <time datetime="2014-09-20">
+            Sep 20
+          </time>
+          <!-- Star Icon -->
+          <svg class="m-svgicon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="15" height="15" aria-labelledby="svgicon_star-title-1 svgicon_star-desc-1">
+            <title id="svgicon_star-title-1">Title</title>
+            <desc id="svgicon_star-desc-1">Description</desc>
+            <a xlink:href="#">
+              <rect width="15" height="15"></rect>
+            </a>
+          </svg>
+          <!-- Subject -->
+          <p class="m-short-mail_subject">
+            <span>Development Files</span> - Lorem ipsum dolor sit amet.
+          </p>
+        </section>
+      </article>
+
+
+
+
+
+
+
+      <!-- Opened E-mail -->
+      <article hidden>
+
+        <!-- Acessibility reference -->
+        <h2>Opened email</h2>
+
+        <!-- Star -->
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="15" height="15" aria-labelledby="svgicon_star-title-2 svgicon_star-desc-2">
+          <title id="svgicon_star-title-2">Title</title>
+          <desc id="svgicon_star-desc-2">Description</desc>
+          <a xlink:href="#">
+            <rect width="15" height="15"></rect>
+          </a>
+        </svg>
+
+        <!-- Title -->
+        <p>Development Files</p>
+
+        <!-- Answer Icon -->
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="15" height="15" aria-labelledby="svgicon_answer-title svgicon_answer-desc">
+          <title id="svgicon_answer-title">Title</title>
+          <desc id="svgicon_answer-desc">Description</desc>
+          <a xlink:href="#">
+            <rect width="15" height="15"></rect>
+          </a>
+        </svg>
+
+        <!-- Trash Icon -->
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="15" height="15" aria-labelledby="svgicon_trash-title svgicon_trash-desc">
+          <title id="svgicon_trash-title">Title</title>
+          <desc id="svgicon_trash-desc">Description</desc>
+          <a xlink:href="#">
+            <rect width="15" height="15"></rect>
+          </a>
+        </svg>
+
+        <!-- Sender Photo -->
+        <img src="http://placehold.it/50x50" alt="David Taylor image">
+
+        <!-- Sender Name -->
         <p>
-          Attachments (2 files, 13.6 <abbr title="Kilobyte">KB</abbr>)
+          <span>David Taylor</span> to me
         </p>
 
-        <!-- Fst Attachment-->
+        <!-- Menu -->
         <div>
-          <abbr title="HyperText Markup Language">HTML</abbr>
-          <p>
-            index.html (3.4 <abbr title="Kilobyte">KB</abbr>)
-          </p>
-          <ul>
-            <li><a href="#">Share</a></li>
-            <li><a href="#">View</a></li>
-            <li><a download>Download</a></li>
+          <button type="button" id="menu_received-mail-actions" aria-expanded="false">
+            Choose an action
+          </button>
+          <ul role="menu" aria-labelledby="menu_received-mail-actions">
+            <li role="presentation">
+              <a role="menuitem">
+                Answer
+              </a>
+            </li>
           </ul>
         </div>
 
-        <!-- Snd Attachment-->
+        <!-- Attachment Icon -->
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="15" height="15" aria-labelledby="title desc">
+          <title id="title">Title</title>
+          <desc id="desc">Description</desc>
+          <a xlink:href="#">
+            <rect width="15" height="15"></rect>
+          </a>
+        </svg>
+
+        <!-- Date -->
+        <time datetime="2014-09-20T23:30">
+          Today, Sep 20, 11:30 PM
+        </time>
+
+        <!-- Content -->
+        <p>
+          Hello Megan,
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, eius fugit molestias quod quo, esse officiis asperiores. Consequatur et optio, recusandae enim laborum assumenda harum saepe, excepturi sint tenetur quae autem sequi. Mollitia eaque harum vero fuga est tenetur minus, repellendus quas! Alias, quae. Eos illum, debitis voluptatem. Aliquam, voluptatum!
+        </p>
         <div>
-          <abbr title="Cascading Style Sheets">CSS</abbr>
+
+        <!-- Below Content -->
           <p>
-            style.css (10.2 <abbr title="Kilobyte">KB</abbr>)
+            Attachments (2 files, 13.6 <abbr title="Kilobyte">KB</abbr>)
           </p>
-          <ul>
-            <li><a href="#">Share</a></li>
-            <li><a href="#">View</a></li>
-            <li><a download>Download</a></li>
-          </ul>
+
+          <!-- Fst Attachment-->
+          <div>
+            <abbr title="HyperText Markup Language">HTML</abbr>
+            <p>
+              index.html (3.4 <abbr title="Kilobyte">KB</abbr>)
+            </p>
+            <ul>
+              <li><a href="#">Share</a></li>
+              <li><a href="#">View</a></li>
+              <li><a download>Download</a></li>
+            </ul>
+          </div>
+
+          <!-- Snd Attachment-->
+          <div>
+            <abbr title="Cascading Style Sheets">CSS</abbr>
+            <p>
+              style.css (10.2 <abbr title="Kilobyte">KB</abbr>)
+            </p>
+            <ul>
+              <li><a href="#">Share</a></li>
+              <li><a href="#">View</a></li>
+              <li><a download>Download</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </article>
-  </main>
+      </article>
+    </main>
+</div>
 </body>
 </html>

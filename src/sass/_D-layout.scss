@@ -1,3 +1,22 @@
 /**********************
 _layout.scss
 **********************/
+
+.l-wrap{
+  margin: 0 auto;
+  max-width: 940px;
+  width: 100%;
+}
+
+$asideWidth: 20%;
+.l-aside{
+  min-width: 50px;
+  width: $asideWidth;
+
+  float: left;
+}
+
+.l-main{
+  width: (100 - $asideWidth);
+  float: left;
+}
