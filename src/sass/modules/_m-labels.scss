@@ -5,7 +5,42 @@ _m-labels.scss
   &_title{
     color: palette(primary,light);
   }
+
   &_itens{
+  }
+
+  [class^=m-labels_item-]{
+    &:after{
+      @include circle(10px);
+
+      content: "";
+
+      display: inline-block;
+
+    }
+  }
+
+  &_item-1:after{
+    background-color: #e5763e;
+  }
+
+  &_item-2:after{
+    background-color: #e1c557;
+  }
+
+  &_item-3:after{
+    background-color: #8bcbca;
+  }
+
+  &_item-4:after{
+    background-color: #b48cec;
+  }
+
+  &_itens_link{
+    display: block;
+
+    float: left;
+
     text-indent: -9999px;
   }
 }

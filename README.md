@@ -23,15 +23,17 @@ Arquitetura CSS
 
 1. Diretivas de processadores, como ```@extends``` e ```@include```.
 
-2. Box-model, como ```height```, ```width```, ```margin```, ```padding```, ```border```.
+2. Propriedade ```content```
 
-3. Posicionamento: ```position```, ```top```, ```left```, ```z-index```, ```float```, ```clear```
+3. Box-model, como ```height```, ```width```, ```margin```, ```padding```, ```border```.
 
-4. Visibilidade: ```display``` e ```visibility```
+4. Posicionamento: ```position```, ```top```, ```left```, ```z-index```, ```float```, ```clear```
 
-4. Fonte e texto: ```font-family```, ```font-size```, ```line-height```, ```text-decoration```, ```color```, ```text-align```.
+5. Visibilidade: ```display``` e ```visibility```
 
-5. Design: ```background```, ```transform```, ```box-shadow```, ```border-radius```.
+6. Fonte e texto: ```font-family```, ```font-size```, ```line-height```, ```text-decoration```, ```color```, ```text-align```.
+
+7. Design: ```background```, ```transform```, ```box-shadow```, ```border-radius```.
 
 ### Prefixos das Classes
 
