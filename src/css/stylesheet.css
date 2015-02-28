@@ -83,6 +83,12 @@ _states.scss
   visibility: hidden; }
 
 /**********************
+/components/_m-button.scss
+**********************/
+.m-menu_btn {
+  text-indent: -9999px; }
+
+/**********************
 _m-labels.scss
 **********************/
 .m-labels_title {
