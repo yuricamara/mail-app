@@ -10,6 +10,8 @@ Build
 2. Acesse a pasta src no console do S.O.
 3. Execute: sass -r sass-globbing --watch sass:css
 
+Para se ter um CSS com indicação em comentários, do arquivo e linha de cada regra correspondente nos arquivos SCSS, acrescente o parâmetro --line-comments na execução do Sass Globbin.
+
 **Running Cross-Device**
 
 1. Instale browser-sync: npm install -g browser-sync
