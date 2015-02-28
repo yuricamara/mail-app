@@ -3,13 +3,42 @@ _m-short-mail.scss
 **********************/
 
 .m-short-mail{
+  @include clearfix;
   &_title{
     @include invisible-acessible;
   }
+
+  &_label{
+    @include circle(10px);
+    display: block;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    text-indent: -9999px;
+
+    background-color: black;
+  }
+
+  &_content{
+    float: left;
+  }
+
+  &_sender{
+    float: left;
+  }
+
+  &_infos{
+    float: right;
+  }
+
   &_maildate{
     color: palette(primary,light40);
   }
+
   &_subject{
+    clear: both;
     color: palette(primary,light80);
   }
 }
