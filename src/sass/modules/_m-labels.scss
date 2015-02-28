@@ -2,5 +2,7 @@
 _m-labels.scss
 **********************/
 .m-labels{
-
+  &_title{
+    color: palette(primary,light);
+  }
 }

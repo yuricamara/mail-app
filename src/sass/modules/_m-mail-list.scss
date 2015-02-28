@@ -3,6 +3,10 @@ _m-mail-list.scss
 **********************/
 .m-mail-list{
   &_header{
-    background-color: palette(primary,dark);
+    background-color: palette(secondary,base);
+  }
+  &_header-title{
+    color: palette(primary,lightest);
+    font-weight: normal;
   }
 }

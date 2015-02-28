@@ -1,19 +1,21 @@
 $palettes: (
+  //gray
   primary: (
-    lightest: white ,
-    light: #919191,
-    base: #717171,
-    dark: #292929,
+    lightest: white,
+    light20: #f6f5f3,
+    light40: #918F8F,
+    light80: #6b6a6f,
+    light: #6e7176,
+    base: #36393e,
+    dark: #1e2126,
     darkest: black
   ),
+  //green
   secondary: (
-    base: #90fab1
+    base: #97c89b
   )
 );
 
 @function palette($palette, $tone: 'base') {
   @return map-get(map-get($palettes, $palette), $tone);
 }
-
-//e.g. color: palette(green); or color: palette(grey, dark);
-

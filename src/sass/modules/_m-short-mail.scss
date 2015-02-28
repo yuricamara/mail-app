@@ -3,4 +3,10 @@ _m-short-mail.scss
 **********************/
 
 .m-short-mail{
+  &_maildate{
+    color: palette(primary,light40);
+  }
+  &_subject{
+    color: palette(primary,light80);
+  }
 }

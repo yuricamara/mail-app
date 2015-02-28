@@ -36,11 +36,14 @@ html {
 ul {
   list-style: none; }
 
+/**********************
+_theme.scss
+**********************/
 .th-aside {
-  background-color: #717171; }
+  background-color: #36393e; }
 
 .th-main {
-  background-color: #292929; }
+  background-color: white; }
 
 /**********************
 _layout.scss
@@ -87,19 +90,30 @@ _states.scss
 /**********************
 _m-labels.scss
 **********************/
+.m-labels_title {
+  color: #6e7176; }
+
 /**********************
 _m-mail-list.scss
 **********************/
 .m-mail-list_header {
-  background-color: #292929; }
+  background-color: #97c89b; }
+.m-mail-list_header-title {
+  color: white;
+  font-weight: normal; }
 
 /**********************
 _m-short-mail.scss
 **********************/
+.m-short-mail_maildate {
+  color: #918F8F; }
+.m-short-mail_subject {
+  color: #6b6a6f; }
+
 /**********************
 _m-user-picture.scss
 **********************/
 .m-user-picture {
-  background-color: #292929; }
+  background-color: #1e2126; }
 
 /*# sourceMappingURL=stylesheet.css.map */
