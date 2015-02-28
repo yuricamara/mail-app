@@ -3,6 +3,9 @@ _m-short-mail.scss
 **********************/
 
 .m-short-mail{
+  &_title{
+    @include invisible-acessible;
+  }
   &_maildate{
     color: palette(primary,light40);
   }

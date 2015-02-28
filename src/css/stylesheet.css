@@ -75,16 +75,11 @@ _layout.scss
 /**********************
 _states.scss
 **********************/
-.is-display-none-accessible {
-  height: 1px;
-  width: 1px;
-  position: absolute;
-  left: -9999px;
-  top: auto;
-  overflow: hidden; }
-
-.is-display-none-inaccessible {
+.is-not-rendered {
   display: none;
+  visibility: hidden; }
+
+.is-hidden {
   visibility: hidden; }
 
 /**********************
@@ -92,6 +87,8 @@ _m-labels.scss
 **********************/
 .m-labels_title {
   color: #6e7176; }
+.m-labels_itens {
+  text-indent: -9999px; }
 
 /**********************
 _m-mail-list.scss
@@ -105,6 +102,13 @@ _m-mail-list.scss
 /**********************
 _m-short-mail.scss
 **********************/
+.m-short-mail_title {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  overflow: hidden; }
 .m-short-mail_maildate {
   color: #918F8F; }
 .m-short-mail_subject {
