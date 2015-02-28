@@ -32,6 +32,11 @@ time, mark, audio, video {
   @include box-sizing(border-box);
 }
 
+html,
+body{
+  height: 100%;
+}
+
 html{
   font: 62.5% 'Raleway', sans-serif;
 }
