@@ -53,50 +53,51 @@
     <main class="l-main th-main" role="main">
       <article class="m-mail-list l-mail-list">
         <header class="m-mail-list_header">
-          <!-- small screens-->
-          <div class="m-menu--mail-list-ss m-menu">
-            <button class="m-menu--mail-list-ss_btn m-menu_btn" type="button" id="menu_main-actions" aria-expanded="false">
-              Choose an item
-            </button>
-            <ul hidden role="menu" aria-labelledby="menu_main-actions">
-              <li role="presentation">
-                <a role="menuitem">
-                  Compose Mail
-                </a>
-              </li>
-              <li role="presentation">
-                <a role="menuitem">
-                  Inbox
-                </a>
-              </li>
-              <li role="presentation">
-                <a role="menuitem">
-                  Sent
-                </a>
-              </li>
-            </ul>
-          </div>
+          <div class="m-mail-list_header-content">
+            <div class="m-menu--mail-list-ss m-menu">
+              <button class="m-menu--mail-list-ss_btn m-menu_btn" type="button" id="menu_main-actions" aria-expanded="false">
+                Choose an item
+              </button>
+              <ul hidden role="menu" aria-labelledby="menu_main-actions">
+                <li role="presentation">
+                  <a role="menuitem">
+                    Compose Mail
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a role="menuitem">
+                    Inbox
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a role="menuitem">
+                    Sent
+                  </a>
+                </li>
+              </ul>
+            </div>
 
-          <h2 class="m-mail-list_header-title">
-            Inbox <span hidden>(14 unread)</span>
-          </h2>
+            <h2 class="m-mail-list_header-title">
+              Inbox <span hidden>(14 unread)</span>
+            </h2>
 
-          <!-- big screens -->
-          <div hidden class="m-menu-dd">
-            <button type="button" id="menu_boxes" aria-expanded="false">
-              Choose a box
-            </button>
-            <ul hidden role="menu" aria-labelledby="menu_boxes">
-              <li role="presentation">
-                <a role="menuitem">
-                  Inbox
-                </a>
-              </li>
-            </ul>
+            <!-- big screens -->
+            <div hidden class="m-menu-dd">
+              <button type="button" id="menu_boxes" aria-expanded="false">
+                Choose a box
+              </button>
+              <ul hidden role="menu" aria-labelledby="menu_boxes">
+                <li role="presentation">
+                  <a role="menuitem">
+                    Inbox
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </header>
 
-        <section class="m-short-mail m-mail-list_mail">
+        <section class="m-short-mail">
 
           <!-- Acessibility reference -->
           <h3 class="m-short-mail_title">E-mail number 1</h3>
@@ -109,40 +110,42 @@
 
 
           <div class="m-short-mail_content">
+          <!-- small screens-->
 
-            <p class="m-short-mail_sender">
-              <strong>David Taylor</strong>
-            </p>
-
-            <div class="m-short-mail_infos">
-
-              <!-- Attachment icon -->
-              <svg class="m-svgicon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="10" height="10" aria-labelledby="svgicon_clips-title svgicon_clips-desc">
-                <title id="svgicon_clips-title">Title</title>
-                <desc id="svgicon_clips-desc">Description</desc>
-                <a xlink:href="#">
-                  <rect width="10" height="10"></rect>
-                </a>
-              </svg>
-
-              <!-- Star Icon -->
-              <svg class="m-svgicon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="10" height="10" aria-labelledby="svgicon_star-title-1 svgicon_star-desc-1">
-                <title id="svgicon_star-title-1">Title</title>
-                <desc id="svgicon_star-desc-1">Description</desc>
-                <a xlink:href="#">
-                  <rect width="10" height="15"></rect>
-                </a>
-              </svg>
-
-                             <time class="m-short-mail_maildate" datetime="2014-09-20">
+            <div class="m-short-mail_top">
+              <p class="m-short-mail_sender">
+                <strong>David Taylor</strong>
+              </p>
+              <time class="m-short-mail_maildate" datetime="2014-09-20">
                 Sep 20
               </time>
             </div>
 
-            <!-- Subject -->
-            <p class="m-short-mail_subject">
-              <span>Development Files</span> - Lorem ipsum dolor sit amet.
-            </p>
+            <div class="m-short-mail_bottom">
+              <!-- Subject -->
+              <p class="m-short-mail_subject">
+                <span>Development Files</span> - Lorem ipsum dolor sit amet.
+              </p>
+              <div class="m-short-mail_icons">
+                <!-- Attachment icon -->
+                <svg class="m-svgicon m-short-mail_icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="15" height="15" aria-labelledby="svgicon_clips-title svgicon_clips-desc">
+                  <title id="svgicon_clips-title">Title</title>
+                  <desc id="svgicon_clips-desc">Description</desc>
+                  <a xlink:href="#">
+                    <rect width="15" height="15"></rect>
+                  </a>
+                </svg>
+
+                <!-- Star Icon -->
+                <svg class="m-svgicon m-short-mail_icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="15" height="15" aria-labelledby="svgicon_star-title-1 svgicon_star-desc-1">
+                  <title id="svgicon_star-title-1">Title</title>
+                  <desc id="svgicon_star-desc-1">Description</desc>
+                  <a xlink:href="#">
+                    <rect width="15" height="15"></rect>
+                  </a>
+                </svg>
+              </div>
+            </div>
           </div>
 
 

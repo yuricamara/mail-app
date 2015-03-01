@@ -2,14 +2,24 @@
 _m-labels.scss
 **********************/
 .m-labels{
+  font-size: 1rem;
   &_title{
+    padding: 10px 0 5px;
+
+    font-size: 1.4em;
+    text-align: center;
+
     color: palette(primary,light);
   }
 
   &_itens{
+    margin: 0 auto;
+    width: 10px;
   }
 
   [class^=m-labels_item-]{
+    padding: 10px 0;
+
     &:after{
       @include circle(10px);
 

@@ -1,0 +1,15 @@
+/**********************
+/components/_m-menu.scss
+**********************/
+.m-menu{
+  font-size: 1rem;
+  &--mail-list-ss{
+    padding-left: 10px;
+  }
+
+  &--mail-list-ss_btn{
+    float: left;
+    height: 20px;
+    width: 20px;
+  }
+}

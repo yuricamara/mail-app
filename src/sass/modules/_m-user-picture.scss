@@ -2,5 +2,14 @@
 _m-user-picture.scss
 **********************/
 .m-user-picture{
+  height: 50px;
+
+  position: relative;
+
   background-color: palette(primary, dark);
+
+  &_img{
+    @include center-middle-default(30px,30px);
+
+  }
 }

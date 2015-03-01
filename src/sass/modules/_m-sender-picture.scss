@@ -3,10 +3,7 @@ _m-sender-picture.scss
 **********************/
 
 .m-sender-picture{
-  float: left;
   &--short-mail{
-    position: relative;
-    height: 40px;
-    width: 40px;
+    position: fixed;
   }
 }

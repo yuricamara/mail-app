@@ -10,17 +10,16 @@ _layout.scss
   width: 100%;
 }
 
-$asideWidth: 20%;
 .l-aside{
   height: 100%;
-  min-width: 50px;
-  width: $asideWidth;
+  width: 60px;
 
-  float: left;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .l-main{
   height: 100%;
-  width: (100 - $asideWidth);
-  float: left;
+  margin-left: 60px;
 }

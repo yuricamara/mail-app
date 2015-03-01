@@ -2,11 +2,26 @@
 _m-mail-list.scss
 **********************/
 .m-mail-list{
+  font-size: 1rem;
+  width: 100%;
   &_header{
+    height: 50px;
+    width: 100%;
+
+    display: table;
+
     background-color: palette(secondary,base);
   }
+
+  &_header-content{
+    display: table-cell;
+    vertical-align: middle;
+  }
+
   &_header-title{
     color: palette(primary,lightest);
+    font-size: 2.2em;
     font-weight: normal;
+    text-align: center;
   }
 }
