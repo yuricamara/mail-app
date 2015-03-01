@@ -8,9 +8,9 @@ Build
 
 1. Instale Sass Globbin: gem install sass-globbing
 2. Acesse a pasta src no console do S.O.
-3. Execute: sass -r sass-globbing --watch sass:css
+3. Execute: sass -r sass-globbing --watch --line-comments sass:css
 
-Para se ter um CSS com indicação em comentários, do arquivo e linha de cada regra correspondente nos arquivos SCSS, acrescente o parâmetro --line-comments na execução do Sass Globbin.
+Para se ter um CSS com indicação em comentários, do arquivo e linha de cada regra correspondente nos arquivos SCSS, use o parâmetro --line-comments na execução do Sass Globbin.
 
 **Running Cross-Device**
 
