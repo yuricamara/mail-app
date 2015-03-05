@@ -1,16 +1,9 @@
-(function(){
-  'use strict';
+requirejs.config({
+  paths: {
+    "ajaxRequest" : "ajax-request"
+  }
+});
 
-  var request = new XMLHttpRequest();
-
-  request.open('GET','js/mails.json');
-
-  request.onreadystatechange = function(){
-    if(request.readyState === 4 && request.status === 200 ){
-      console.log(request.responseText);
-    }
-  };
-
-  request.send(null);
-
-}());
+require(['ajaxRequest'],function(mails){
+  console.log('ajaxRequestResponse',mails);
+});
