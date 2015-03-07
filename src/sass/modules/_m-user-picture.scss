@@ -9,7 +9,8 @@ _m-user-picture.scss
   background-color: palette(primary, dark);
 
   &_img{
-    @include center-middle-default(35px,35px);
+    @include center-middle-default(37px,37px);
+    border-radius: 37px;
 
   }
 }
