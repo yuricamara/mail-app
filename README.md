@@ -23,7 +23,7 @@ Arquitetura CSS
 
 ### Ordem das propriedades
 
-1. Diretivas de processadores, como ```@extends``` e ```@include```.
+1. Diretivas de processadores, como ```@extends``` e ```@include``` exceto para breakpoint que deve ficar por último.
 
 2. Propriedade ```content```
 
@@ -69,6 +69,10 @@ estado módulo layout tema
 
 ss - telas pequenas (small screens)
 bs - telas grandes (big screen)
+
+Breakpoint
+-----------------
+[Smartphone]-800px-[Desktop]
 
 Imagens
 -----------------

@@ -1,4 +1,6 @@
 @mixin square($sideLenght){
   height: $sideLenght;
   width: $sideLenght;
+
+  border-radius: 0;
 }

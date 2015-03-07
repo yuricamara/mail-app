@@ -5,6 +5,9 @@ _m-sender-picture.scss
 .m-sender-picture{
   &--short-mail{
     position: fixed;
+    @include bp{
+      display: none;
+    }
   }
   &_img{
     border-radius: 60px;

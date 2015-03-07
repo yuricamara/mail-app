@@ -17,6 +17,10 @@ _layout.scss
   position: fixed;
   top: 0;
   left: 0;
+
+  @include bp{
+    width: 180px;
+  }
 }
 
 .l-main{

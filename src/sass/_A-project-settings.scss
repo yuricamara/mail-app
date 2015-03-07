@@ -1,3 +1,5 @@
+// Color Palette
+
 $palettes: (
   //gray
   primary: (
@@ -18,4 +20,13 @@ $palettes: (
 
 @function palette($palette, $tone: 'base') {
   @return map-get(map-get($palettes, $palette), $tone);
+}
+
+
+//Breakpoint
+
+@mixin bp {
+  @media (min-width: 800px) {
+    @content;
+  }
 }

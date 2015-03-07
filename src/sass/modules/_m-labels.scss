@@ -3,6 +3,12 @@ _m-labels.scss
 **********************/
 .m-labels{
   font-size: 1rem;
+
+  @include bp{
+    margin: 0 auto;
+    width: 80%;
+  }
+
   &_title{
     padding: 10px 0 5px;
 
@@ -11,15 +17,28 @@ _m-labels.scss
     font-style: italic;
     text-align: center;
 
+    @include bp{
+      font-style: normal;
+      text-align: left;
+    }
+
   }
 
   &_itens{
     margin: 0 auto;
     width: 15px;
+
+    @include bp{
+      width: 100%;
+    }
   }
 
   [class^=m-labels_item-]{
     padding: 10px 0;
+
+    @include bp{
+      padding: 20px 0;
+    }
 
     &:after{
       @include circle(15px);
@@ -27,6 +46,12 @@ _m-labels.scss
       content: "";
 
       display: inline-block;
+
+      @include bp{
+        @include square(10px);
+
+        float: right;
+      }
 
     }
   }
@@ -53,5 +78,12 @@ _m-labels.scss
     float: left;
 
     text-indent: -9999px;
+
+    @include bp{
+      color: palette(primary, lightest);
+      font-size: 1.4em;
+      line-height: 0.5;
+      text-indent: 0;
+    }
   }
 }
