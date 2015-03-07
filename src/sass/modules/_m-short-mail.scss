@@ -8,8 +8,6 @@ _m-short-mail.scss
   padding: 10px;
   border-bottom: 2px solid palette(primary,light20);
   font-size: 1rem;
-
-  clear: both;
   &_title{
     @include invisible-acessible;
   }
@@ -30,7 +28,7 @@ _m-short-mail.scss
 
   &_content{
     padding-left: 10px;
-    margin-left: 40px;
+    margin: 5px 0 2px 60px;
   }
 
   &_top{

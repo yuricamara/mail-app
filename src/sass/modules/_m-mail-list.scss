@@ -5,7 +5,7 @@ _m-mail-list.scss
   font-size: 1rem;
   width: 100%;
   &_header{
-    height: 50px;
+    height: 55px;
     width: 100%;
 
     display: table;
@@ -20,7 +20,7 @@ _m-mail-list.scss
 
   &_header-title{
     color: palette(primary,lightest);
-    font-size: 2.2em;
+    font-size: 2.6em;
     font-weight: normal;
     text-align: center;
   }

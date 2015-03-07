@@ -8,20 +8,21 @@ _m-labels.scss
 
     font-size: 1.4em;
     text-align: center;
+    font-style: italic;
 
     color: palette(primary,light);
   }
 
   &_itens{
     margin: 0 auto;
-    width: 10px;
+    width: 15px;
   }
 
   [class^=m-labels_item-]{
     padding: 10px 0;
 
     &:after{
-      @include circle(10px);
+      @include circle(15px);
 
       content: "";
 
