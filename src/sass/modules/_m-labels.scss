@@ -6,11 +6,11 @@ _m-labels.scss
   &_title{
     padding: 10px 0 5px;
 
-    font-size: 1.4em;
-    text-align: center;
-    font-style: italic;
-
     color: palette(primary,light);
+    font-size: 1.4em;
+    font-style: italic;
+    text-align: center;
+
   }
 
   &_itens{

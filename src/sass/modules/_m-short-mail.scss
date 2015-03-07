@@ -4,9 +4,10 @@ _m-short-mail.scss
 
 .m-short-mail{
   @include clearfix;
-  width: 100%;
-  padding: 10px;
   border-bottom: 2px solid palette(primary,light20);
+  padding: 10px;
+  width: 100%;
+
   font-size: 1rem;
   &_title{
     @include invisible-acessible;
@@ -14,12 +15,13 @@ _m-short-mail.scss
 
   &_label{
     @include circle(12px);
-    display: block;
-
     border: 2px solid #FFF;
+
     position: absolute;
     right: 0;
     top: 0;
+
+    display: block;
 
     text-indent: -9999px;
 
@@ -27,38 +29,42 @@ _m-short-mail.scss
   }
 
   &_content{
-    padding-left: 10px;
     margin-left: 60px;
+    padding-left: 10px;
   }
 
   &_top{
-    float: left;
-    width: 100%;
     margin: 5px 0;
+    width: 100%;
+
+    float: left;
   }
 
   &_sender{
-    width: 58%;
     float: left;
+    width: 58%;
 
     font-size: 1.6em;
   }
 
   &_infos{
-    width: 42%;
-    float: right;
     height: 19px;
     padding: 5px 0;
+    width: 42%;
+
+    float: right;
 
     font-size: 1.4em;
   }
 
   &_maildate{
-    float: right;
-    color: palette(primary,light40);
     width: 50px;
-    text-align: right;
+
+    float: right;
+
+    color: palette(primary,light40);
     font-size: 1.2em;
+    text-align: right;
   }
 
   &_bottom{
@@ -70,13 +76,14 @@ _m-short-mail.scss
     width: 85%;
 
     float: left;
-    color: palette(primary,light80);
 
+    color: palette(primary,light80);
     font-size: 1.3em;
   }
 
   &_icons{
     width: 15px;
+
     float: right;
   }
 

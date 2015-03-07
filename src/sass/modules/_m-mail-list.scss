@@ -2,8 +2,9 @@
 _m-mail-list.scss
 **********************/
 .m-mail-list{
-  font-size: 1rem;
   width: 100%;
+
+  font-size: 1rem;
   &_header{
     height: 55px;
     width: 100%;
@@ -14,8 +15,10 @@ _m-mail-list.scss
   }
 
   &_header-content{
-    display: table-cell;
     vertical-align: middle;
+
+    display: table-cell;
+
   }
 
   &_header-title{
