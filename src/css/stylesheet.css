@@ -106,11 +106,15 @@ _states.scss
   visibility: hidden; }
 
 /**********************
-/components/_m-button.scss
+/components/_m-btn-hamburguer.scss
 **********************/
-/* line 5, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/components/_m-button.scss */
-.m-menu {
-  font-size: 1rem; }
+/* line 5, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/components/_m-btn-hamburguer.scss */
+.m-btn-hamburguer {
+  float: left;
+  height: 20px;
+  width: 20px;
+  padding: 0;
+  background-color: transparent; }
 
 /**********************
 /components/_m-menu.scss
@@ -121,13 +125,6 @@ _states.scss
   /* line 6, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/components/_m-menu.scss */
   .m-menu--mail-list-ss {
     padding-left: 10px; }
-  /* line 10, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/components/_m-menu.scss */
-  .m-menu--mail-list-ss_btn {
-    float: left;
-    height: 20px;
-    width: 20px;
-    padding: 0;
-    background-color: transparent; }
 
 /**********************
 _m-labels.scss
