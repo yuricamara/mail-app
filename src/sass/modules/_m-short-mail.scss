@@ -14,12 +14,12 @@ _m-short-mail.scss
   }
 
   &_label{
-    @include circle(12px);
+    @include circle(13px);
     border: 2px solid #FFF;
 
     position: absolute;
-    right: 0;
-    top: 0;
+    right: -5px;
+    top: 7px;
 
     display: block;
 
