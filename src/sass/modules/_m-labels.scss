@@ -18,6 +18,8 @@ _m-labels.scss
     text-align: center;
 
     @include bp{
+      padding: 20px 0 10px;
+
       font-style: normal;
       text-align: left;
     }

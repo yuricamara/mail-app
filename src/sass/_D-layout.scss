@@ -26,4 +26,8 @@ _layout.scss
 .l-main{
   height: 100%;
   margin-left: 70px;
+
+  @include bp{
+    margin-left: 180px;
+  }
 }
