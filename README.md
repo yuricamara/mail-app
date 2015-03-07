@@ -69,3 +69,19 @@ estado módulo layout tema
 
 ss - telas pequenas (small screens)
 bs - telas grandes (big screen)
+
+Imagens
+-----------------
+
+### Fotos
+
+1. Smartphone
+
+  - Usuário: 37X37px(retina: 74X74px)
+  - Contatos: 60X60px (retina: 120X120px)
+
+2. Desktop
+
+  - Contatos: 35X35px (retina: 70X70px)
+
+
