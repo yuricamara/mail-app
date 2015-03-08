@@ -9,6 +9,11 @@ _m-short-mail.scss
   width: 100%;
 
   font-size: 1rem;
+
+  @include bp{
+    border-bottom: 1px solid palette(primary,light30);
+  }
+
   &_title{
     @include invisible-acessible;
   }
@@ -31,6 +36,13 @@ _m-short-mail.scss
   &_content{
     margin-left: 60px;
     padding-left: 10px;
+
+    position: relative;
+
+    @include bp{
+      margin-left: 25px;
+      padding-left: 0;
+    }
   }
 
   &_top{
@@ -67,24 +79,8 @@ _m-short-mail.scss
     text-align: right;
   }
 
-  &_bottom{
-    @include clearfix;
-    width: 100%;
-  }
-
   &_subject{
-    width: 85%;
-
-    float: left;
-
     color: palette(primary,light80);
     font-size: 1.3em;
   }
-
-  &_icons{
-    width: 15px;
-
-    float: right;
-  }
-
 }

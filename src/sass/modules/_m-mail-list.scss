@@ -12,6 +12,12 @@ _m-mail-list.scss
     display: table;
 
     background-color: palette(secondary,base);
+
+    @include bp{
+      height: 100px;
+
+      background-color: palette(primary,light30);
+    }
   }
 
   &_header-content{
@@ -26,5 +32,10 @@ _m-mail-list.scss
     font-size: 2.6em;
     font-weight: normal;
     text-align: center;
+
+    @include bp{
+      color: palette(primary,darkest);
+      font-size: 2.8em;
+    }
   }
 }

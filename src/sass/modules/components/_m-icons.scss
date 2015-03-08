@@ -1,0 +1,30 @@
+/**********************
+/components/_m-icons.scss
+**********************/
+
+.m-icon{
+
+  &-clips,
+  &-star{
+    position: absolute;
+    right: 0;
+  }
+
+  &-clips{
+    top: 20px;
+
+    @include bp{
+      right: 45px;
+      top: 5px;
+    }
+  }
+
+  &-star{
+    top: 40px;
+
+    @include bp{
+      left: -20px;
+      top: 30px;
+    }
+  }
+}
