@@ -43,6 +43,7 @@ Arquitetura CSS
 * Estado: is ou has
 * Módulos: m
 * Temas: t
+* Javascript : js
 
 ### Classes dos módulos
 

@@ -2,14 +2,13 @@
 _m-corner-up-right.scss
 **********************/
 .m-corner-up-right{
-  height: 55px;
+  padding: 8.5px 15px;
 
   position: relative;
 
   background-color: palette(primary, dark);
 
   @include bp{
-    height: 60px;
 
     border-bottom: 1px solid palette(primary,light);
 
@@ -17,8 +16,6 @@ _m-corner-up-right.scss
   }
 
   &_img{
-    @include center-middle-default(37px,37px);
-
     border-radius: 37px;
 
     @include bp{
