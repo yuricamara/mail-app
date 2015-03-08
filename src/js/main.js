@@ -1,9 +1,16 @@
 requirejs.config({
   paths: {
-    "ajaxRequest" : "ajax-request"
+    "ajaxRequest" : "modules/ajax-request",
+    "media" : "modules/media"
   }
 });
 
+require(['media'],function(media){
+  'use strict';
+  console.log(media.isDesktop());
+});
+
 require(['ajaxRequest'],function(mails){
-  console.log('ajaxRequestResponse',mails);
+  'use strict';
+  //console.log('ajaxRequestResponse',mails);
 });
