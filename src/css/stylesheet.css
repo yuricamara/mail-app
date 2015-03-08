@@ -252,53 +252,58 @@ _m-mail-list.scss
   font-size: 1rem; }
   /* line 8, C:/Users/yurim_000/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-list.scss */
   .m-mail-list_header {
+    padding: 15px 0;
     width: 100%;
-    display: table;
     background-color: #97c89b; }
     @media (min-width: 800px) {
       /* line 8, C:/Users/yurim_000/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-list.scss */
       .m-mail-list_header {
+        padding: 30px 0;
         background-color: #efefef; } }
-  /* line 20, C:/Users/yurim_000/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-list.scss */
-  .m-mail-list_header-content {
-    margin: 12px 0; }
-    @media (min-width: 800px) {
-      /* line 20, C:/Users/yurim_000/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-list.scss */
-      .m-mail-list_header-content {
-        position: relative;
-        margin: 32px auto;
-        width: 220px; } }
-  /* line 29, C:/Users/yurim_000/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-list.scss */
+  @media (min-width: 800px) {
+    /* line 21, C:/Users/yurim_000/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-list.scss */
+    .m-mail-list_header-content {
+      margin: 0 auto;
+      width: 220px;
+      position: relative; } }
+  /* line 30, C:/Users/yurim_000/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-list.scss */
   .m-mail-list_header-title {
     color: white;
     font-size: 2.6em;
     font-weight: normal;
+    line-height: 1;
     text-align: center; }
-    /* line 35, C:/Users/yurim_000/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-list.scss */
+    /* line 37, C:/Users/yurim_000/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-list.scss */
     .m-mail-list_header-title--unread {
       font-size: 0.6em; }
     @media (min-width: 800px) {
-      /* line 29, C:/Users/yurim_000/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-list.scss */
+      /* line 30, C:/Users/yurim_000/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-list.scss */
       .m-mail-list_header-title {
         color: black;
         font-size: 2.8em; } }
-  /* line 47, C:/Users/yurim_000/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-list.scss */
+  /* line 49, C:/Users/yurim_000/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-list.scss */
   .m-mail-list_header-menu {
     margin-left: 15px; }
     @media (min-width: 800px) {
-      /* line 47, C:/Users/yurim_000/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-list.scss */
+      /* line 49, C:/Users/yurim_000/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-list.scss */
       .m-mail-list_header-menu {
+        margin-left: 0;
         position: absolute;
+        bottom: 0;
         right: 0; } }
-    /* line 54, C:/Users/yurim_000/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-list.scss */
+    /* line 60, C:/Users/yurim_000/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-list.scss */
     .m-mail-list_header-menu_btn {
       padding: 0;
       height: 20px;
       width: 20px;
       float: left;
       background-color: transparent; }
+      /* line 69, C:/Users/yurim_000/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-list.scss */
+      .m-mail-list_header-menu_btn--arrow-down {
+        background-color: #d4d4d4;
+        border-radius: 2px; }
       @media (min-width: 800px) {
-        /* line 63, C:/Users/yurim_000/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-list.scss */
+        /* line 74, C:/Users/yurim_000/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-list.scss */
         .m-mail-list_header-menu_btn--hamburguer {
           display: none; } }
 

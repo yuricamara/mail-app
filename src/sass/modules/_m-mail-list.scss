@@ -6,23 +6,24 @@ _m-mail-list.scss
 
   font-size: 1rem;
   &_header{
+    padding: 15px 0;
     width: 100%;
-
-    display: table;
 
     background-color: palette(secondary,base);
 
     @include bp{
+      padding: 30px 0;
+
       background-color: palette(primary,light30);
     }
   }
 
   &_header-content{
-    margin: 12px 0;
     @include bp{
-      position: relative;
-      margin: 32px auto;
+      margin: 0 auto;
       width: 220px;
+
+      position: relative;
     }
   }
 
@@ -30,6 +31,7 @@ _m-mail-list.scss
     color: palette(primary,lightest);
     font-size: 2.6em;
     font-weight: normal;
+    line-height: 1;
     text-align: center;
 
     &--unread{
@@ -46,8 +48,12 @@ _m-mail-list.scss
 
   &_header-menu{
     margin-left: 15px;
+
     @include bp{
+      margin-left: 0;
+
       position: absolute;
+      bottom: 0;
       right: 0;
     }
 
@@ -59,6 +65,11 @@ _m-mail-list.scss
         float: left;
 
         background-color: transparent;
+
+      &--arrow-down{
+        background-color: palette(primary,light40);
+        border-radius: 2px;
+      }
 
       &--hamburguer{
         @include bp{
