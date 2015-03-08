@@ -6,7 +6,6 @@ _m-mail-list.scss
 
   font-size: 1rem;
   &_header{
-    height: 55px;
     width: 100%;
 
     display: table;
@@ -14,17 +13,17 @@ _m-mail-list.scss
     background-color: palette(secondary,base);
 
     @include bp{
-      height: 100px;
-
       background-color: palette(primary,light30);
     }
   }
 
   &_header-content{
-    vertical-align: middle;
-
-    display: table-cell;
-
+    margin: 12px 0;
+    @include bp{
+      position: relative;
+      margin: 32px auto;
+      width: 220px;
+    }
   }
 
   &_header-title{
@@ -33,9 +32,40 @@ _m-mail-list.scss
     font-weight: normal;
     text-align: center;
 
+    &--unread{
+      font-size: 0.6em;
+    }
+
     @include bp{
       color: palette(primary,darkest);
       font-size: 2.8em;
     }
   }
+
+
+
+  &_header-menu{
+    margin-left: 15px;
+    @include bp{
+      position: absolute;
+      right: 0;
+    }
+
+    &_btn{
+        padding: 0;
+        height: 20px;
+        width: 20px;
+
+        float: left;
+
+        background-color: transparent;
+
+      &--hamburguer{
+        @include bp{
+          display: none;
+        }
+      }
+    }
+  }
+
 }
