@@ -11,5 +11,8 @@ _m-sender-picture.scss
   }
   &_img{
     border-radius: 60px;
+    @include bp{
+      display: none;
+    }
   }
 }

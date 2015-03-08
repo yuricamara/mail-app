@@ -7,7 +7,39 @@ requirejs.config({
 
 require(['media'],function(media){
   'use strict';
-  console.log(media.isDesktop());
+
+  var hiddenSmartphoneEls = document.getElementsByClassName('js-hidden-smartphone'),
+      hiddenDesktopEls = document.getElementsByClassName('js-hidden-desktop');
+
+  var actionsRelatedToMedia = function(){
+    var i = 0, l = 0;
+
+    if(media.isDesktop()){
+
+      for(i = 0, l = hiddenSmartphoneEls.length;i<l;i++){
+        hiddenSmartphoneEls[i].removeAttribute('hidden');
+      }
+
+      for(i = 0, l = hiddenDesktopEls.length;i<l;i++){
+        hiddenDesktopEls[i].setAttribute('hidden','');
+      }
+    }else{
+
+      for(i = 0, l = hiddenDesktopEls.length;i<l;i++){
+        hiddenDesktopEls[i].removeAttribute('hidden');
+      }
+
+      for(i = 0, l = hiddenSmartphoneEls.length;i<l;i++){
+        hiddenSmartphoneEls[i].setAttribute('hidden','');
+      }
+    }
+  };
+
+  actionsRelatedToMedia();
+
+  window.addEventListener('resize',function(){
+    actionsRelatedToMedia();
+  });
 });
 
 require(['ajaxRequest'],function(mails){
