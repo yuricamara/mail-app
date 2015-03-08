@@ -28,3 +28,15 @@ _layout.scss
     margin-left: 180px;
   }
 }
+
+.l-mail-list{
+  height: 100%;
+  width: 100%;
+
+  @include bp{
+    min-width: 330px;
+    width: 35%;
+
+    float: left;
+  }
+}
