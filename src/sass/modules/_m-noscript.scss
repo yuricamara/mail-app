@@ -1,0 +1,24 @@
+/**********************
+_m-noscript.scss
+**********************/
+
+.m-noscript{
+  width: 100%;
+
+  position: fixed;
+  z-index: 1;
+
+  color: #F00;
+  font-size: 1rem;
+  text-align: center;
+
+  background-color: #FFF;
+
+  &_title{
+    font-size: 2.2em;
+  }
+
+  &_information{
+    font-size: 1.4em;
+  }
+}
