@@ -2,6 +2,11 @@ requirejs.config({
   paths: {
     "ajaxRequest" : "modules/ajax-request",
     "media" : "modules/media"
+  },
+  config: {
+    "media":{
+      "breakpoint":"940px"
+    }
   }
 });
 

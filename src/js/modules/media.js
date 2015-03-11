@@ -1,8 +1,10 @@
-define(function(){
+define(['module'],function(module){
   'use strict';
 
+  var breakpoint = module.config().breakpoint;
+
   var isDesktop = function(){
-    var desktopSize = window.matchMedia('(min-width:940px)');
+    var desktopSize = window.matchMedia('(min-width:'+breakpoint+')');
 
     if(desktopSize.matches){
       return true;
