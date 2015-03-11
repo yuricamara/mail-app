@@ -28,7 +28,7 @@ $palettes: (
 //Breakpoint
 
 @mixin bp {
-  @media (min-width: 940px) {
+  @media (min-width: 60em) {
     @content;
   }
 }
