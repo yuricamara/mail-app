@@ -17,6 +17,7 @@ requirejs.config({
 
 
 require(['hiddenAttribute'],function(hiddenAttribute){
+  'use strict';
   hiddenAttribute();
 
   window.addEventListener('resize',function(){

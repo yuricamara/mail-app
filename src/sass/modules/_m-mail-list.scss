@@ -65,11 +65,15 @@ _m-mail-list.scss
         background-color: transparent;
 
       &--arrow-down{
+        display: block;
+
         background-color: palette(primary,light40);
         border-radius: 2px;
       }
 
       &--hamburguer{
+        display: block;
+
         @include bp{
           display: none;
         }
