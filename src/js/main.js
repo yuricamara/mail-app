@@ -25,7 +25,7 @@ requirejs.config({
 require(['text!short-mail','text!mails.json','hiddenAttribute'],function(shortMailTpl,mails,hiddenAttribute){
   'use strict';
   console.log(shortMailTpl);
-  console.log(mails);
+  console.log(JSON.parse('['+mails+']'));
 
   hiddenAttribute();
 
