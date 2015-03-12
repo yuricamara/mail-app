@@ -1,8 +1,13 @@
 requirejs.config({
   paths: {
-    "ajaxRequest" : "modules/ajax-request",
+    //Modules
     "media" : "modules/media",
-    "hiddenAttribute":"modules/hiddenAttribute"
+    "hiddenAttribute":"modules/hiddenAttribute",
+    //Templates
+    "short-mail": "templates/short-mail.html",
+    //Plugins
+    "text":"plugins/text"
+
   },
   config: {
     "media":{
@@ -16,17 +21,15 @@ requirejs.config({
 });
 
 
-require(['hiddenAttribute'],function(hiddenAttribute){
+//Short Mails
+require(['text!short-mail','text!mails.json','hiddenAttribute'],function(shortMailTpl,mails,hiddenAttribute){
   'use strict';
+  console.log(shortMailTpl);
+  console.log(mails);
+
   hiddenAttribute();
 
   window.addEventListener('resize',function(){
     hiddenAttribute();
   });
-});
-
-
-require(['ajaxRequest'],function(mails){
-  'use strict';
-  //console.log('ajaxRequestResponse',mails);
 });
