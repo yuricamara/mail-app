@@ -6,7 +6,7 @@ requirejs.config({
   },
   config: {
     "media":{
-      "breakpoint":"940px"
+      "breakpoint":"60em"
     },
     "hiddenAttribute":{
       "smartphoneElementClass":"js-smartphone",
