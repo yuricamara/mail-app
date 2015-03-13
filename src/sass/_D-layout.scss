@@ -21,7 +21,7 @@ _layout.scss
 }
 
 .l-main{
-  height: 100%;
+  @include clearfix;
   margin-left: 70px;
 
   @include bp{
@@ -34,8 +34,7 @@ _layout.scss
   width: 100%;
 
   @include bp{
-    min-width: 330px;
-    width: 35%;
+    width: 330px;
 
     float: left;
   }

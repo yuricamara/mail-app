@@ -13,11 +13,20 @@ define(['text!short-mail','text!mails.json'],function(shortMailTplStr,mailsJSON)
     for(iterator, mailsJSONArrayLength; iterator < mailsJSONArrayLength; iterator++){
 
       var senderName = mailsJSONArray[iterator].owner || 'me',
-          mailNumber = mailsJSONArray[iterator].id;
+          subject = mailsJSONArray[iterator].title || '',
+          mailNumber = mailsJSONArray[iterator].id || '',
+          contentLong = mailsJSONArray[iterator].body || '',
+          contentShort = contentLong.slice(0,35 - subject.length) + '...' || ''
+      ;
+
 
       shortMailTplStrParsed = shortMailTplStr
         .replace(/%mail_number%/g, mailNumber)
-        .replace(/%sender_name%/g, senderName);
+        .replace(/%sender_name%/g, senderName)
+        .replace(/%subject%/g, subject)
+        .replace(/%content_short%/g, contentShort)
+        .replace(/%content_long%/g, contentLong)
+      ;
 
       shortMailStr += shortMailTplStrParsed;
     }

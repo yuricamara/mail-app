@@ -45,7 +45,8 @@ _m-short-mail.scss
   }
 
   &_sender-picture{
-    position: fixed;
+    float: left;
+
     border-radius: 60px;
     @include bp{
       display: none;
