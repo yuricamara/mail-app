@@ -3,6 +3,7 @@ requirejs.config({
     //Modules
     "media" : "modules/media",
     "hiddenAttribute":"modules/hiddenAttribute",
+    "shortMailCreation": "modules/shortMailCreation",
     //Templates
     "short-mail": "templates/short-mail.html",
     //Plugins
@@ -22,11 +23,15 @@ requirejs.config({
 
 
 //Short Mails
-require(['text!short-mail','text!mails.json'],function(shortMailTpl,mailsJSON){
+require(['shortMailCreation'],function(createShortMailsString){
   'use strict';
-  console.log(shortMailTpl);
-  console.log(JSON.parse('['+mailsJSON+']'));
 
+  var shortMailsString = createShortMailsString(),
+      mailListEl = document.getElementById('mail-list');
+
+  mailListEl.insertAdjacentHTML('beforeend',shortMailsString);
+
+  //console.log(shortMailsString);
 
   require(['hiddenAttribute'],function(hideShowHiddenAttributes){
     hideShowHiddenAttributes();
