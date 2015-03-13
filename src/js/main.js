@@ -22,14 +22,14 @@ requirejs.config({
 
 
 //Short Mails
-require(['text!short-mail','text!mails.json','hiddenAttribute'],function(shortMailTpl,mails,hiddenAttribute){
+require(['text!short-mail','text!mails.json','hiddenAttribute'],function(shortMailTpl,mailsJSON,hideShowHiddenAttributes){
   'use strict';
   console.log(shortMailTpl);
-  console.log(JSON.parse('['+mails+']'));
+  console.log(JSON.parse('['+mailsJSON+']'));
 
-  hiddenAttribute();
+  hideShowHiddenAttributes();
 
   window.addEventListener('resize',function(){
-    hiddenAttribute();
+    hideShowHiddenAttributes();
   });
 });
