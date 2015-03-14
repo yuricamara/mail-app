@@ -1,5 +1,5 @@
 {
-  "name": "teste-frontend-mail-app",
+  "name": "mail-app",
   "dependencies": {
     "normalize.css": "~3.0.2",
     "requirejs-plugins": "~1.0.3"
