@@ -4,7 +4,6 @@ _layout.scss
 
 .l-wrap{
   @include clearfix;
-  height: 100%;
 }
 
 .l-aside{
@@ -23,7 +22,6 @@ _layout.scss
 .l-main{
   @include clearfix;
   margin-left: 70px;
-  height: 100%;
 
   position: relative;
 

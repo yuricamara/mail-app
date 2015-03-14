@@ -2,6 +2,8 @@
 _m-labels.scss
 **********************/
 .m-labels{
+  height: 100%;
+
   font-size: 1rem;
 
   @include bpd{

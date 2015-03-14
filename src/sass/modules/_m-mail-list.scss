@@ -84,10 +84,16 @@ _m-mail-list.scss
     }
   }
 
+  &_loading{
+    display: none;
+  }
+
   &_wrap:empty + &_loading{
     padding-top: 30px;
     height: 100%;
     width: 100%;
+
+    display: block;
 
     position: absolute;
     top: 0;

@@ -3,6 +3,8 @@ _m-mail-opened.scss
 **********************/
 
 .m-mail-opened{
+  display: none;
+
   font-size: 1rem;
 
   @include bpd{
