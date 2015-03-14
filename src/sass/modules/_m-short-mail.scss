@@ -99,7 +99,7 @@ _m-short-mail.scss
     text-align: right;
   }
 
-  &_subject{
+  &_message{
     padding-right: 20px;
 
     color: palette(primary,light80);
@@ -111,11 +111,23 @@ _m-short-mail.scss
     @include bpt{
       display: none;
     }
+
+    @include bpd{
+      display: none;
+    }
   }
 
   &_long-body{
     display: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
     @include bpt{
+      display: block;
+    }
+
+    @include bpd{
       display: block;
     }
   }

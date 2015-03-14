@@ -23,7 +23,7 @@ define(['text!short-mail','text!mails.json'],function(shortMailTplStr,mailsJSON)
       shortMailTplStrParsed = shortMailTplStr
         .replace(/%mail_number%/g, mailNumber)
         .replace(/%sender_name%/g, senderName)
-        .replace('%subject%', subject)
+        .replace(/%subject%/g, subject)
         .replace('%content_short%', contentShort)
         .replace('%content_long%', contentLong)
       ;
