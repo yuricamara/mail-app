@@ -13,7 +13,7 @@
   &-clips{
     top: 20px;
 
-    @include bp{
+    @include bpd{
       right: 45px;
       top: 5px;
     }
@@ -22,7 +22,7 @@
   &-star{
     top: 40px;
 
-    @include bp{
+    @include bpd{
       left: -20px;
       top: 25px;
     }

@@ -13,7 +13,7 @@ _m-short-mail.scss
 
   font-size: 1rem;
 
-  @include bp{
+  @include bpd{
     border-bottom: 1px solid palette(primary,light30);
   }
 
@@ -35,7 +35,7 @@ _m-short-mail.scss
 
     background-color: white;
 
-    @include bp{
+    @include bpd{
       @include square(13px);
 
       border: 1px solid palette(primary,light30);
@@ -48,7 +48,7 @@ _m-short-mail.scss
     float: left;
 
     border-radius: 60px;
-    @include bp{
+    @include bpd{
       display: none;
     }
   }
@@ -59,7 +59,7 @@ _m-short-mail.scss
 
     position: relative;
 
-    @include bp{
+    @include bpd{
       margin-left: 25px;
       padding-left: 0;
     }

@@ -8,7 +8,7 @@ _m-corner-up-right.scss
 
   background-color: palette(primary, dark);
 
-  @include bp{
+  @include bpd{
 
     border-bottom: 1px solid palette(primary,light);
 
@@ -18,7 +18,7 @@ _m-corner-up-right.scss
   &_img{
     border-radius: 37px;
 
-    @include bp{
+    @include bpd{
       display: none;
     }
   }

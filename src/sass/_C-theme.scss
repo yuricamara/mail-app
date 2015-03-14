@@ -8,7 +8,7 @@ _theme.scss
 
 .th-main{
   background-color: palette(primary,lightest);
-  @include bp{
+  @include bpd{
     background-color: palette(primary,light20);
   }
 }

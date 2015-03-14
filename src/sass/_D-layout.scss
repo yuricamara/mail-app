@@ -15,7 +15,7 @@ _layout.scss
   top: 0;
   left: 0;
 
-  @include bp{
+  @include bpd{
     width: 180px;
   }
 }
@@ -27,7 +27,7 @@ _layout.scss
 
   position: relative;
 
-  @include bp{
+  @include bpd{
     margin-left: 180px;
   }
 }
@@ -36,7 +36,7 @@ _layout.scss
   height: 100%;
   width: 100%;
 
-  @include bp{
+  @include bpd{
     width: 330px;
 
     float: left;

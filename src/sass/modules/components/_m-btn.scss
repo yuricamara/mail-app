@@ -14,7 +14,7 @@
   background-color: palette(secondary,base);
 
   &--compose-mail{
-    @include bp{
+    @include bpd{
       margin: 0 auto;
       display: block;
       width: 150px;

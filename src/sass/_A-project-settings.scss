@@ -27,8 +27,17 @@ $palettes: (
 
 //Breakpoint
 
-@mixin bp {
+//"Tablet"
+@mixin bpt {
+  @media (min-width: 30em) {
+    @content;
+  }
+}
+
+//Desktop
+@mixin bpd {
   @media (min-width: 60em) {
     @content;
   }
 }
+

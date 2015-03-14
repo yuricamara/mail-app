@@ -4,7 +4,7 @@ _m-labels.scss
 .m-labels{
   font-size: 1rem;
 
-  @include bp{
+  @include bpd{
     margin: 0 auto;
     width: 80%;
   }
@@ -17,7 +17,7 @@ _m-labels.scss
     font-style: italic;
     text-align: center;
 
-    @include bp{
+    @include bpd{
       padding: 20px 0 10px;
 
       font-style: normal;
@@ -30,7 +30,7 @@ _m-labels.scss
     margin: 0 auto;
     width: 15px;
 
-    @include bp{
+    @include bpd{
       width: 100%;
     }
   }
@@ -38,7 +38,7 @@ _m-labels.scss
   [class^=m-labels_item-]{
     padding: 10px 0;
 
-    @include bp{
+    @include bpd{
       padding: 20px 0;
     }
 
@@ -49,7 +49,7 @@ _m-labels.scss
 
       display: inline-block;
 
-      @include bp{
+      @include bpd{
         @include square(10px);
 
         float: right;
@@ -81,7 +81,7 @@ _m-labels.scss
 
     text-indent: -9999px;
 
-    @include bp{
+    @include bpd{
       color: palette(primary, lightest);
       font-size: 1.4em;
       line-height: 0.5;
