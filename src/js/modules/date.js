@@ -16,7 +16,7 @@ define(function(){
   };
 
   return function(unformattedDate){
-    var dateValuesArray = unformattedDate.match(/(\d{2})\/(\d{2})/);
+    var dateValuesArray = unformattedDate.match(/(\d{2})\/(\d{2})/) || '';
 
     return {
       monthNumber : dateValuesArray[2],

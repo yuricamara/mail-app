@@ -42,6 +42,22 @@ _m-short-mail.scss
 
       left: 15px;
     }
+
+    &--clients{
+      background-color: #e5763e;
+    }
+
+    &--social{
+      background-color: #e1c557;
+    }
+
+    &--family{
+      background-color: #8bcbca;
+    }
+
+    &--friends{
+      background-color: #b48cec;
+    }
   }
 
   &_sender-picture{

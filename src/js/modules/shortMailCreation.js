@@ -18,7 +18,8 @@ define(['text!short-mail','text!mails.json','date'],function(shortMailTplStr,mai
           contentShort = contentLong.slice(0,35 - subject.length) + '...' || '',
           monthNumber = getDateInfo(mailsJSONArray[iterator].created_at).monthNumber,
           monthString = getDateInfo(mailsJSONArray[iterator].created_at).monthShortString,
-          day = getDateInfo(mailsJSONArray[iterator].created_at).day
+          day = getDateInfo(mailsJSONArray[iterator].created_at).day,
+          category = mailsJSONArray[iterator].category.replace(/\s/g , '-').toLowerCase()
       ;
 
 
@@ -31,6 +32,7 @@ define(['text!short-mail','text!mails.json','date'],function(shortMailTplStr,mai
         .replace('%month_number%', monthNumber)
         .replace('%month_string%', monthString)
         .replace(/%day%/g, day)
+        .replace('%category%',category)
       ;
 
       shortMailStr += shortMailTplStrParsed;
