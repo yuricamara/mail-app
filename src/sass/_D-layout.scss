@@ -23,6 +23,9 @@ _layout.scss
 .l-main{
   @include clearfix;
   margin-left: 70px;
+  height: 100%;
+
+  position: relative;
 
   @include bp{
     margin-left: 180px;

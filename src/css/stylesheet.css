@@ -96,7 +96,9 @@ _layout.scss
 
 /* line 23, ../sass/_D-layout.scss */
 .l-main {
-  margin-left: 70px; }
+  margin-left: 70px;
+  height: 100%;
+  position: relative; }
   /* line 2, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/helpers/mixins/_clearfix.scss */
   .l-main:before, .l-main:after {
     content: "";
@@ -112,12 +114,12 @@ _layout.scss
     .l-main {
       margin-left: 180px; } }
 
-/* line 32, ../sass/_D-layout.scss */
+/* line 35, ../sass/_D-layout.scss */
 .l-mail-list {
   height: 100%;
   width: 100%; }
   @media (min-width: 60em) {
-    /* line 32, ../sass/_D-layout.scss */
+    /* line 35, ../sass/_D-layout.scss */
     .l-mail-list {
       width: 330px;
       float: left; } }
@@ -345,6 +347,17 @@ _m-mail-list.scss
           /* line 77, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-list.scss */
           .m-mail-list_header-menu_btn--hamburguer {
             display: none; } }
+  /* line 87, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-list.scss */
+  .m-mail-list_wrap:empty + .m-mail-list_loading {
+    padding-top: 30px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    font-size: 2.2em;
+    color: #97c89b;
+    text-align: center;
+    background-color: white; }
 
 /**********************
 _m-mail-opened.scss

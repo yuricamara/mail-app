@@ -29,7 +29,7 @@ require(['shortMailCreation'],function(createShortMailsString){
   var shortMailsString = createShortMailsString(),
       mailListEl = document.getElementById('mail-list');
 
-  mailListEl.insertAdjacentHTML('beforeend',shortMailsString);
+  mailListEl.innerHTML = shortMailsString;
 
   //console.log(shortMailsString);
 
