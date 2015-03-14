@@ -148,12 +148,15 @@ _states.scss
   text-transform: uppercase;
   border-radius: 2px;
   background-color: #97c89b; }
-  @media (min-width: 60em) {
-    /* line 16, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/components/_m-btn.scss */
-    .m-btn--compose-mail {
-      margin: 0 auto;
-      display: block;
-      width: 150px; } }
+  /* line 16, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/components/_m-btn.scss */
+  .m-btn--compose-mail {
+    display: none; }
+    @media (min-width: 60em) {
+      /* line 16, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/components/_m-btn.scss */
+      .m-btn--compose-mail {
+        margin: 0 auto;
+        width: 150px;
+        display: block; } }
 
 /**********************
 /components/_m-icon.scss
@@ -489,5 +492,16 @@ _m-short-mail.scss
     padding-right: 20px;
     color: #6b6a6f;
     font-size: 1.3em; }
+  @media (min-width: 30em) and (max-width: 59.99em) {
+    /* line 110, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
+    .m-short-mail_short-body {
+      display: none; } }
+  /* line 116, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
+  .m-short-mail_long-body {
+    display: none; }
+    @media (min-width: 30em) and (max-width: 59.99em) {
+      /* line 116, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
+      .m-short-mail_long-body {
+        display: block; } }
 
 /*# sourceMappingURL=stylesheet.css.map */

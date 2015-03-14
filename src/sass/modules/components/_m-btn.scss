@@ -14,10 +14,13 @@
   background-color: palette(secondary,base);
 
   &--compose-mail{
+    display: none;
+
     @include bpd{
       margin: 0 auto;
-      display: block;
       width: 150px;
+
+      display: block;
     }
   }
 }

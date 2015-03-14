@@ -29,7 +29,7 @@ $palettes: (
 
 //"Tablet"
 @mixin bpt {
-  @media (min-width: 30em) {
+  @media (min-width: 30em) and (max-width: 59.99em) {
     @content;
   }
 }

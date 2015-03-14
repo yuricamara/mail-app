@@ -105,4 +105,18 @@ _m-short-mail.scss
     color: palette(primary,light80);
     font-size: 1.3em;
   }
+
+
+  &_short-body{
+    @include bpt{
+      display: none;
+    }
+  }
+
+  &_long-body{
+    display: none;
+    @include bpt{
+      display: block;
+    }
+  }
 }

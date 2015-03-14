@@ -12,11 +12,9 @@ requirejs.config({
   },
   config: {
     "media":{
-      "breakpoint":"60em"
-    },
-    "hiddenAttribute":{
-      "smartphoneElementClass":"js-smartphone",
-      "desktopElementClass": "js-desktop"
+      "breakpointTablet":"30em",
+      "breakpointTabletDesktop":"59.99em",
+      "breakpointDesktop":"60em"
     }
   }
 });
@@ -31,12 +29,4 @@ require(['shortMailCreation'],function(createShortMailsString){
 
   mailListEl.innerHTML = shortMailsString;
 
-  //console.log(shortMailsString);
-
-  require(['hiddenAttribute'],function(hideShowHiddenAttributes){
-    hideShowHiddenAttributes();
-    window.addEventListener('resize',function(){
-      hideShowHiddenAttributes();
-    });
-  });
 });
