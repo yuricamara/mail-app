@@ -1,6 +1,5 @@
-define(['text!short-mail','text!mails.json'],function(shortMailTplStr,mailsJSON){
+define(['text!short-mail','text!mails.json','date'],function(shortMailTplStr,mailsJSON,getDateInfo){
   'use strict';
-
 
   var createShortMail = function(){
 
@@ -16,7 +15,10 @@ define(['text!short-mail','text!mails.json'],function(shortMailTplStr,mailsJSON)
           subject = mailsJSONArray[iterator].title || '',
           mailNumber = mailsJSONArray[iterator].id || '',
           contentLong = mailsJSONArray[iterator].body || '',
-          contentShort = contentLong.slice(0,35 - subject.length) + '...' || ''
+          contentShort = contentLong.slice(0,35 - subject.length) + '...' || '',
+          monthNumber = getDateInfo(mailsJSONArray[iterator].created_at).monthNumber,
+          monthString = getDateInfo(mailsJSONArray[iterator].created_at).monthShortString,
+          day = getDateInfo(mailsJSONArray[iterator].created_at).day
       ;
 
 
@@ -26,6 +28,9 @@ define(['text!short-mail','text!mails.json'],function(shortMailTplStr,mailsJSON)
         .replace(/%subject%/g, subject)
         .replace('%content_short%', contentShort)
         .replace('%content_long%', contentLong)
+        .replace('%month_number%', monthNumber)
+        .replace('%month_string%', monthString)
+        .replace(/%day%/g, day)
       ;
 
       shortMailStr += shortMailTplStrParsed;

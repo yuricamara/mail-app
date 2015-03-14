@@ -2,7 +2,7 @@ requirejs.config({
   paths: {
     //Modules
     "media" : "modules/media",
-    "hiddenAttribute":"modules/hiddenAttribute",
+    "date": "modules/date",
     "shortMailCreation": "modules/shortMailCreation",
     //Templates
     "short-mail": "templates/short-mail.html",
