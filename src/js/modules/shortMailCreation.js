@@ -1,5 +1,15 @@
+/**
+ * Receive a JSON with datas about the emails and return a HTML snippet with these informations to be displayed in the browser as an email list.
+ * @returns {Function} Create a HTML snippet with emails information.
+ */
+
 define(['text!short-mail','text!mails.json','date'],function(shortMailTplStr,mailsJSON,getDateInfo){
   'use strict';
+
+  /**
+   * Create a HTML snippet with mails information
+   * @returns {String} HTML snippet to be displayed as an email list.
+   */
 
   var createShortMail = function(){
 

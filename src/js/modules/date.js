@@ -1,3 +1,9 @@
+/**
+ * Receive a date in dd/mm format and returns the month number, the
+ * month string (mmm format) and the day as object properties.
+ * @returns {Function}  A function which returns the date informations.
+ */
+
 define(function(){
 
   var months = {
@@ -15,7 +21,14 @@ define(function(){
     '12': 'Dec'
   };
 
-  return function(unformattedDate){
+  /**
+   * Receive a date in dd/mm format and returns the month number,
+   * month string (mmm format) and the day.
+   * @param   {String} unformattedDate A date starting with dd/mm numeric format.
+   * @returns {Object} Month number, month string (mmm format) and day as object properties.
+   */
+
+  var formatDate = function(unformattedDate){
     var dateValuesArray = unformattedDate.match(/(\d{2})\/(\d{2})/) || '';
 
     return {
@@ -24,4 +37,6 @@ define(function(){
       day :  dateValuesArray[1]
     };
   };
+
+  return formatDate;
 });
