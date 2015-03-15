@@ -3,7 +3,7 @@
  * @returns {Function} Create a HTML snippet with emails information.
  */
 
-define(['text!short-mail','text!mails.json','date'],function(shortMailTplStr,mailsJSON,getDateInfo){
+define(['text!shortMail','text!mails.json','date'],function(shortMailTplStr,mailsJSON,getDateInfo){
   'use strict';
 
   /**

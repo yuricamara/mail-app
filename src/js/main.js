@@ -1,20 +1,20 @@
 requirejs.config({
   paths: {
     //Modules
-    "media" : "modules/media",
-    "date": "modules/date",
-    "shortMailCreation": "modules/shortMailCreation",
+    media : 'modules/media',
+    date: 'modules/date',
+    shortMailCreation: 'modules/shortMailCreation',
     //Templates
-    "short-mail": "templates/short-mail.html",
+    shortMail: 'templates/short-mail.html',
     //Plugins
-    "text":"plugins/text"
+    text:'plugins/text'
 
   },
   config: {
-    "media":{
-      "breakpointTablet":"30em",
-      "breakpointTabletDesktop":"59.99em",
-      "breakpointDesktop":"60em"
+    media:{
+      breakpointTablet:'30em',
+      breakpointTabletDesktop:'59.99em',
+      breakpointDesktop:'60em'
     }
   }
 });
