@@ -5,7 +5,7 @@ require.config({
     chai : '/node_modules/chai/chai',
 
     //Modules to test
-    date : 'app-scripts/date',
+    date : 'src-scripts/date',
 
     //Suites
     dateModuleTests : 'test-suites/date-module-tests'
@@ -20,8 +20,6 @@ require.config({
 define(function(require){
   var chai = require('chai'),
       mocha = require('mocha');
-
-  var should = chai.should();
 
   mocha.setup('bdd');
 
