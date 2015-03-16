@@ -11,8 +11,8 @@ require.config({
     shortMail: 'templates/short-mail.html',
 
     //Modules to test
-    date : 'src-scripts/date',
-    shortMailCreation : 'src-scripts/shortMailCreation',
+    date : 'src-scripts/modules/date',
+    shortMailCreation : 'src-scripts/modules/shortMailCreation',
 
     //Suites
     dateModuleTests : 'test-suites/date-module-tests',
