@@ -42,8 +42,16 @@ html{
   font: 62.5% 'Raleway', sans-serif;
 }
 
-button{
+abbr[title] {
   border: none;
+}
+
+button{
+  padding: 0;
+  border: none;
+  &:focus{
+    outline: none;
+  }
 }
 
 ul{
@@ -52,4 +60,6 @@ ul{
 
 a{
   cursor: pointer;
+  color: #000;
+  text-decoration: none;
 }

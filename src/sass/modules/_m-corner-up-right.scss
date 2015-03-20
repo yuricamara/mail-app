@@ -22,4 +22,15 @@ _m-corner-up-right.scss
       display: none;
     }
   }
+
+  &_btn{
+    display: none;
+
+    @include bpd{
+      margin: 0 auto;
+      width: 150px;
+
+      display: block;
+    }
+  }
 }

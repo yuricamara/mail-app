@@ -2,12 +2,290 @@
 _m-mail-opened.scss
 **********************/
 
+$mailOpenedPaddingLeft: 25px;
+$mailOpenedPaddingRight: 20px;
+$mailOpenedDivingLine: 1px solid palette(primary,light20);
+
 .m-mail-opened{
+  border-left: $mailOpenedDivingLine;
+  margin-left: 330px;
+
   display: none;
 
-  font-size: 1rem;
+  font-size: 1.2rem;
 
   @include bpd{
     display: block;
   }
 }
+
+.m-mail-opened_title{
+  @include invisible-acessible;
+}
+
+.m-mail-opened_header{
+
+  // TOP
+  &_icon-star,
+  &_title{
+    display: inline-block;
+  }
+
+  &_icon-answer{
+    margin-right: 10px;
+  }
+
+  &_icon-star{
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+  }
+
+  &_icon-trash{
+
+  }
+
+  &_title{
+    width: 100%;
+
+    font-size: 2.2em;
+    overflow: hidden;
+    text-indent: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  //BOTTOM
+
+  &_attachments-qty,
+  &_date,
+  &_exchange,
+  &_icon-clips,
+  &_menu,
+  &_sender-picture{
+    display: inline-block;
+  }
+
+
+  &_attachments-qty{
+    padding-right: 20px;
+
+    color: palette(secondary,base);
+  }
+
+  &_date{
+  }
+
+  &_exchange{
+    padding: 10px;
+
+    float: left;
+
+    color: palette(secondary,base);
+    font-size: 1.3em;
+  }
+
+  &_exchange-sender{
+    padding-right: 5px;
+  }
+
+  &_icon-clips{
+
+  }
+
+  &_menu{
+    padding: 10px 0;
+  }
+
+  &_sender-name{
+    font-weight: bold;
+  }
+
+  &_sender-picture{
+    @include circle(35px);
+
+    float: left;
+  }
+}
+
+.m-mail-opened_header_bottom{
+  border-bottom: $mailOpenedDivingLine;
+  height: 5em;
+
+  &_left,
+  &_right{
+    height: 100%;
+  }
+
+  &_left{
+    padding: 1em 0 1em $mailOpenedPaddingLeft;
+
+    float: left;
+  }
+
+  &_right{
+    padding: 1.5em $mailOpenedPaddingRight 1.5em;
+
+    float: right;
+
+    font-size: 1.2em;
+  }
+}
+
+.m-mail-opened_header_top{
+  border-bottom: $mailOpenedDivingLine;
+  height: 5em;
+
+  &_left,
+  &_right{
+    height: 100%;
+  }
+
+  &_left{
+    padding: 1.5em 0 1.5em $mailOpenedPaddingLeft;
+    width: 80%;
+
+    position: relative;
+
+    float: left;
+  }
+
+  &_right{
+    padding: 1.5em $mailOpenedPaddingRight 1.5em;
+
+    float: right;
+  }
+}
+
+
+.m-mail-opened_body{
+  padding: 2em $mailOpenedPaddingRight 2em $mailOpenedPaddingLeft;
+
+
+  &_mail-content{
+    font-size: 1.2em;
+    line-height: 1.4;
+  }
+}
+
+.m-mail-opened_footer{
+  padding: 0 $mailOpenedPaddingRight 0 $mailOpenedPaddingLeft;
+}
+
+.m-mail-opened_footer-attachments{
+  @include clearfix;
+
+  border-bottom: $mailOpenedDivingLine;
+  border-top: $mailOpenedDivingLine;
+
+  &_options-share,
+  &_options-view{
+    margin-right: 25px;
+  }
+
+  &_item{
+    height: 3em;
+    width: 100%;
+
+    float: left;
+  }
+
+  &_item-left{
+    float: left;
+  }
+
+  &_item-extension{
+    @include center-text-vertically(1.6em);
+
+    margin-right: 5px;
+    width: 40px;
+
+    display: inline-block;
+
+    color: white;
+    text-align: center;
+
+    background-color: palette(primary,base);
+    border-radius: 3px;
+  }
+
+  &_item-desc{
+    display: inline-block;
+
+    font-size: 1.1em;
+  }
+
+  &_item-file{
+
+  }
+
+  &_options{
+    float: right;
+
+    font-size: 1.1em;
+    line-height: 1.5;
+  }
+
+  &_options-download,
+  &_options-share,
+  &_options-view{
+    display: inline-block;
+  }
+
+  &_options-download{
+
+  }
+
+  &_options-share{
+
+  }
+
+  &_options-view{
+
+  }
+
+
+  &_qty{
+    @include center-text-vertically(4em);
+
+    width: 100%;
+
+    float: left;
+
+    font-size: 1.1em;
+  }
+}
+
+.m-mail-opened_footer-actions{
+
+  &_icon-reply,
+  &_btn-reply-text{
+
+  }
+
+  &_btn-reply{
+    margin-top: 20px;
+
+    width: 85px;
+
+    float: right;
+  }
+
+  &_btn-reply-content{
+    margin: 0 auto;
+    width: 60px;
+
+    display: block;
+  }
+
+  &_btn-reply-text{
+    width: 41px;
+
+    float: right;
+  }
+
+  &_icon-reply{
+    float: left;
+  }
+}
+

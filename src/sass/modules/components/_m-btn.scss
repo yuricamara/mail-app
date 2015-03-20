@@ -2,7 +2,7 @@
 /components/_m-btn.scss
 **********************/
 
-.m-btn{
+.m-btn-text{
   height: 31px;
 
   color: palette(primary,lightest);
@@ -12,15 +12,15 @@
 
   border-radius: 2px;
   background-color: palette(secondary,base);
+}
 
-  &--compose-mail{
-    display: none;
+.m-btn-arrow-down{
+  padding: 0;
+  width: 17px;
+  height: 13px;
 
-    @include bpd{
-      margin: 0 auto;
-      width: 150px;
+  display: block;
 
-      display: block;
-    }
-  }
+  background-color: palette(primary,light40);
+  border-radius: 2px;
 }

@@ -11,32 +11,6 @@ _m-labels.scss
     width: 80%;
   }
 
-  &_title{
-    padding: 10px 0 5px;
-
-    color: palette(primary,light);
-    font-size: 1.4em;
-    font-style: italic;
-    text-align: center;
-
-    @include bpd{
-      padding: 20px 0 10px;
-
-      font-style: normal;
-      text-align: left;
-    }
-
-  }
-
-  &_itens{
-    margin: 0 auto;
-    width: 15px;
-
-    @include bpd{
-      width: 100%;
-    }
-  }
-
   [class^=m-labels_item-]{
     padding: 10px 0;
 
@@ -59,6 +33,16 @@ _m-labels.scss
 
     }
   }
+
+  &_itens{
+    margin: 0 auto;
+    width: 15px;
+
+    @include bpd{
+      width: 100%;
+    }
+  }
+
 
   &_item-1:after{
     background-color: #e5763e;
@@ -85,9 +69,28 @@ _m-labels.scss
 
     @include bpd{
       color: palette(primary, lightest);
-      font-size: 1.4em;
-      line-height: 0.5;
+      font-size: 1.3em;
+      line-height: 0.8;
       text-indent: 0;
     }
+  }
+
+  &_title{
+    padding: 10px 0 5px;
+
+    color: palette(primary,light);
+    font-size: 1.3em;
+    font-style: italic;
+    text-align: center;
+
+    @include bpd{
+      padding: 20px 0 10px;
+
+      font-size: 1.2em;
+      font-style: normal;
+      text-align: left;
+      text-transform: uppercase;
+    }
+
   }
 }
