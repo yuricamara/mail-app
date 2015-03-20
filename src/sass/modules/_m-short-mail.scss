@@ -21,6 +21,33 @@ _m-short-mail.scss
     @include invisible-acessible;
   }
 
+  &_icon{
+
+    &-clips,
+    &-star{
+      position: absolute;
+      right: 0;
+    }
+
+    &-clips{
+      top: 20px;
+
+      @include bpd{
+        right: 45px;
+        top: 5px;
+      }
+    }
+
+    &-star{
+      top: 40px;
+
+      @include bpd{
+        left: -20px;
+        top: 25px;
+      }
+    }
+  }
+
   &_label{
     @include circle(13px);
     border: 2px solid #FFF;
