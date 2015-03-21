@@ -37,7 +37,7 @@ $mailOpenedDivingLine: 1px solid palette(primary,light20);
 
   &_icon-star{
     position: absolute;
-    bottom: 20px;
+    top: 20px;
     left: 25px;
   }
 
@@ -48,11 +48,8 @@ $mailOpenedDivingLine: 1px solid palette(primary,light20);
   &_title{
     width: 100%;
 
-    font-size: 2.2em;
-    overflow: hidden;
+    font-size: 2em;
     text-indent: 20px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
   }
 
   //BOTTOM
@@ -131,8 +128,8 @@ $mailOpenedDivingLine: 1px solid palette(primary,light20);
 }
 
 .m-mail-opened_header_top{
+  @include clearfix;
   border-bottom: $mailOpenedDivingLine;
-  height: 5em;
 
   &_left,
   &_right{

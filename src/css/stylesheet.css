@@ -402,92 +402,98 @@ _m-mail-opened.scss
 /* line 38, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
 .m-mail-opened_header_icon-star {
   position: absolute;
-  bottom: 20px;
+  top: 20px;
   left: 25px; }
 /* line 48, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
 .m-mail-opened_header_title {
   width: 100%;
-  font-size: 2.2em;
-  overflow: hidden;
-  text-indent: 20px;
-  text-overflow: ellipsis;
-  white-space: nowrap; }
-/* line 60, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
+  font-size: 2em;
+  text-indent: 20px; }
+/* line 57, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
 .m-mail-opened_header_attachments-qty, .m-mail-opened_header_date, .m-mail-opened_header_exchange, .m-mail-opened_header_icon-clips, .m-mail-opened_header_menu, .m-mail-opened_header_sender-picture {
   display: inline-block; }
-/* line 70, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
+/* line 67, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
 .m-mail-opened_header_attachments-qty {
   padding-right: 15px;
   color: #97c89b; }
-/* line 79, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
+/* line 76, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
 .m-mail-opened_header_exchange {
   padding: 10px;
   float: left;
   color: #97c89b;
   font-size: 1.2em; }
-/* line 88, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
+/* line 85, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
 .m-mail-opened_header_exchange-sender {
   padding-right: 5px; }
-/* line 96, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
+/* line 93, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
 .m-mail-opened_header_menu {
   padding: 10px 0; }
-/* line 100, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
+/* line 97, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
 .m-mail-opened_header_sender-name {
   font-weight: bold; }
-/* line 104, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
+/* line 101, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
 .m-mail-opened_header_sender-picture {
   height: 35px;
   width: 35px;
   border-radius: 17.5px;
   float: left; }
 
-/* line 111, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
+/* line 108, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
 .m-mail-opened_header_bottom {
   border-bottom: 1px solid #f6f5f3;
   padding: 1em 2em; }
-  /* line 115, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
+  /* line 112, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
   .m-mail-opened_header_bottom_left, .m-mail-opened_header_bottom_right {
     height: 100%; }
-  /* line 120, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
+  /* line 117, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
   .m-mail-opened_header_bottom_left {
     display: inline-block; }
-  /* line 124, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
+  /* line 121, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
   .m-mail-opened_header_bottom_right {
     padding-left: 45px;
     display: inline-block;
     font-size: 1.1em; }
 
-/* line 133, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
+/* line 130, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
 .m-mail-opened_header_top {
-  border-bottom: 1px solid #f6f5f3;
-  height: 5em; }
-  /* line 137, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
+  border-bottom: 1px solid #f6f5f3; }
+  /* line 2, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/helpers/mixins/_clearfix.scss */
+  .m-mail-opened_header_top:before, .m-mail-opened_header_top:after {
+    content: "";
+    display: table; }
+  /* line 7, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/helpers/mixins/_clearfix.scss */
+  .m-mail-opened_header_top:after {
+    clear: both; }
+  /* line 10, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/helpers/mixins/_clearfix.scss */
+  .m-mail-opened_header_top {
+    *zoom: 1; }
+  /* line 134, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
   .m-mail-opened_header_top_left, .m-mail-opened_header_top_right {
     height: 100%; }
-  /* line 142, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
+  /* line 139, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
   .m-mail-opened_header_top_left {
     padding: 1.5em 0 1.5em 25px;
     width: 80%;
     position: relative;
     float: left; }
-  /* line 151, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
+  /* line 148, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
   .m-mail-opened_header_top_right {
     padding: 1.5em 20px 1.5em;
     float: right; }
 
-/* line 159, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
+/* line 156, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
 .m-mail-opened_body {
   padding: 2em 20px 2em 25px; }
-  /* line 163, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
+  /* line 160, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
   .m-mail-opened_body_mail-content {
     font-size: 1.2em;
     line-height: 1.4; }
 
-/* line 169, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
+/* line 166, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
 .m-mail-opened_footer {
   padding: 0 20px 0 25px; }
 
-/* line 173, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
+/* line 170, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
 .m-mail-opened_footer-attachments {
   border-bottom: 1px solid #f6f5f3;
   border-top: 1px solid #f6f5f3; }
@@ -501,18 +507,18 @@ _m-mail-opened.scss
   /* line 10, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/helpers/mixins/_clearfix.scss */
   .m-mail-opened_footer-attachments {
     *zoom: 1; }
-  /* line 179, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
+  /* line 176, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
   .m-mail-opened_footer-attachments_options-share, .m-mail-opened_footer-attachments_options-view {
     margin-right: 25px; }
-  /* line 184, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
+  /* line 181, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
   .m-mail-opened_footer-attachments_item {
     height: 3em;
     width: 100%;
     float: left; }
-  /* line 191, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
+  /* line 188, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
   .m-mail-opened_footer-attachments_item-left {
     float: left; }
-  /* line 195, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
+  /* line 192, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
   .m-mail-opened_footer-attachments_item-extension {
     height: 1.6em;
     line-height: 1.6em;
@@ -523,19 +529,19 @@ _m-mail-opened.scss
     text-align: center;
     background-color: #36393e;
     border-radius: 3px; }
-  /* line 210, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
+  /* line 207, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
   .m-mail-opened_footer-attachments_item-desc {
     display: inline-block;
     font-size: 1.1em; }
-  /* line 220, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
+  /* line 217, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
   .m-mail-opened_footer-attachments_options {
     float: right;
     font-size: 1.1em;
     line-height: 1.5; }
-  /* line 227, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
+  /* line 224, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
   .m-mail-opened_footer-attachments_options-download, .m-mail-opened_footer-attachments_options-share, .m-mail-opened_footer-attachments_options-view {
     display: inline-block; }
-  /* line 246, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
+  /* line 243, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
   .m-mail-opened_footer-attachments_qty {
     height: 4em;
     line-height: 4em;
@@ -543,21 +549,21 @@ _m-mail-opened.scss
     float: left;
     font-size: 1.1em; }
 
-/* line 264, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
+/* line 261, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
 .m-mail-opened_footer-actions_btn-reply {
   margin-top: 20px;
   width: 85px;
   float: right; }
-/* line 272, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
+/* line 269, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
 .m-mail-opened_footer-actions_btn-reply-content {
   margin: 0 auto;
   width: 60px;
   display: block; }
-/* line 279, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
+/* line 276, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
 .m-mail-opened_footer-actions_btn-reply-text {
   width: 41px;
   float: right; }
-/* line 285, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
+/* line 282, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-opened.scss */
 .m-mail-opened_footer-actions_icon-reply {
   float: left; }
 
