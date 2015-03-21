@@ -8,18 +8,64 @@ _m-labels.scss
 
   @include bpd{
     margin: 0 auto;
-    width: 80%;
   }
 
-  [class^=m-labels_item-]{
-    padding: 10px 0;
+  &_itens{
+    margin: 0 auto;
+    width: 15px;
 
     @include bpd{
-      padding: 20px 0;
+      padding: 0 1em;
+      width: 100%;
     }
+  }
+
+  &_item-1 .m-labels_itens-link:after{
+    background-color: #e5763e;
+  }
+
+  &_item-2 .m-labels_itens-link:after{
+    background-color: #e1c557;
+  }
+
+  &_item-3 .m-labels_itens-link:after{
+    background-color: #8bcbca;
+  }
+
+  &_item-4 .m-labels_itens-link:after{
+    background-color: #b48cec;
+  }
+
+  &_itens-link{
+    height: 1.5em;
+    margin-bottom: 25px;
+    width: 100%;
+
+    display: block;
+
+    text-indent: -9999px;
+
+    @include bpd{
+      @include center-text-vertically(3em);
+
+      &:hover{
+        outline: 1px solid palette(primary, light60);
+      }
+
+      height: 3em;
+      margin-bottom: 0;
+      padding: 0 0.5em;
+
+      color: palette(primary, lightest);
+      font-size: 1.3em;
+      text-indent: 0;
+    }
+
 
     &:after{
       @include circle(15px);
+
+      float: right;
 
       content: "";
 
@@ -28,55 +74,14 @@ _m-labels.scss
       @include bpd{
         @include square(10px);
 
-        float: right;
+        margin: 1em 0;
+
       }
-
-    }
-  }
-
-  &_itens{
-    margin: 0 auto;
-    width: 15px;
-
-    @include bpd{
-      width: 100%;
-    }
-  }
-
-
-  &_item-1:after{
-    background-color: #e5763e;
-  }
-
-  &_item-2:after{
-    background-color: #e1c557;
-  }
-
-  &_item-3:after{
-    background-color: #8bcbca;
-  }
-
-  &_item-4:after{
-    background-color: #b48cec;
-  }
-
-  &_itens_link{
-    display: block;
-
-    float: left;
-
-    text-indent: -9999px;
-
-    @include bpd{
-      color: palette(primary, lightest);
-      font-size: 1.3em;
-      line-height: 0.8;
-      text-indent: 0;
     }
   }
 
   &_title{
-    padding: 10px 0 5px;
+    padding: 2em 1em 2em;
 
     color: palette(primary,light);
     font-size: 1.3em;
@@ -84,7 +89,7 @@ _m-labels.scss
     text-align: center;
 
     @include bpd{
-      padding: 20px 0 10px;
+      padding: 2em 1.4em 2em;
 
       font-size: 1.2em;
       font-style: normal;
