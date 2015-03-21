@@ -68,7 +68,7 @@ $mailOpenedDivingLine: 1px solid palette(primary,light20);
 
 
   &_attachments-qty{
-    padding-right: 20px;
+    padding-right: 15px;
 
     color: palette(secondary,base);
   }
@@ -82,7 +82,7 @@ $mailOpenedDivingLine: 1px solid palette(primary,light20);
     float: left;
 
     color: palette(secondary,base);
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 
   &_exchange-sender{
@@ -110,7 +110,7 @@ $mailOpenedDivingLine: 1px solid palette(primary,light20);
 
 .m-mail-opened_header_bottom{
   border-bottom: $mailOpenedDivingLine;
-  height: 5em;
+  padding: 1em 2em;
 
   &_left,
   &_right{
@@ -118,17 +118,15 @@ $mailOpenedDivingLine: 1px solid palette(primary,light20);
   }
 
   &_left{
-    padding: 1em 0 1em $mailOpenedPaddingLeft;
-
-    float: left;
+    display: inline-block;
   }
 
   &_right{
-    padding: 1.5em $mailOpenedPaddingRight 1.5em;
+    padding-left: 45px;
 
-    float: right;
+    display: inline-block;
 
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 }
 
