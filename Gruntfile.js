@@ -27,6 +27,18 @@ module.exports = function(grunt){
           keepalive: true
         }
       }
+    },
+    requirejs:{
+      compile:{
+        options:{
+          preserveLicenseComments: false,
+          baseUrl: 'src/js',
+          out: 'public/scrips.js',
+          name: '../vendors/bower_components/almond/almond',
+          include: 'main',
+          mainConfigFile:'src/js/main.js'
+        }
+      }
     }
   });
 
@@ -46,6 +58,11 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.task.run('copy:tests');
     grunt.task.run('connect:tests');
+  });
+
+  grunt.registerTask('build', function(){
+    grunt.loadNpmTasks('grunt-contrib-requirejs');
+    grunt.task.run('requirejs:compile');
   });
 
 };

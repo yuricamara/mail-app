@@ -1,5 +1,6 @@
 .sass-cache
 .tmp
+*.log
 public
 bower_components
 node_modules
