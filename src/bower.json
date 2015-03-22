@@ -2,6 +2,8 @@
   "name": "mail-app",
   "dependencies": {
     "normalize.css": "~3.0.2",
-    "requirejs-plugins": "~1.0.3"
+    "requirejs-plugins": "~1.0.3",
+    "requirejs": "~2.1.16",
+    "almond": "~0.3.1"
   }
 }
