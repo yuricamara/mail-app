@@ -38,12 +38,19 @@ module.exports = function(grunt){
         }
       }
     },
+    processhtml: {
+      build:{
+        files:{
+          'public/index.html':'src/index.html'
+        }
+      }
+    },
     requirejs:{
       build:{
         options:{
           preserveLicenseComments: false,
           baseUrl: 'src/js',
-          out: 'public/scrips.js',
+          out: 'public/scrips.min.js',
           name: '../vendors/bower_components/almond/almond',
           include: 'main',
           mainConfigFile:'src/js/main.js'
@@ -72,8 +79,17 @@ module.exports = function(grunt){
 
   grunt.registerTask('build', function(){
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-processhtml');
     grunt.loadNpmTasks('grunt-contrib-requirejs');
-    grunt.task.run('requirejs:build');
+
+    //images
     grunt.task.run('copy:build');
+
+    //scripts.min.js
+    grunt.task.run('requirejs:build');
+
+
+    //index.html
+    grunt.task.run('processhtml:build');
   });
 };
