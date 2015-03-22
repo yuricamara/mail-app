@@ -42,7 +42,7 @@ define(['text!shortMail','text!mails.json','date'],function(shortMailTplStr,mail
         .replace('%month_number%', monthNumber)
         .replace('%month_string%', monthString)
         .replace(/%day%/g, day)
-        .replace('%category%',category)
+        .replace(/%category%/g,category)
       ;
 
       shortMailStr += shortMailTplStrParsed;

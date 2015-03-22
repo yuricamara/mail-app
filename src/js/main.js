@@ -1,32 +1,39 @@
 requirejs.config({
   paths: {
     //Modules
-    media : 'modules/media',
     date: 'modules/date',
     shortMailCreation: 'modules/shortMailCreation',
+    mailListVisibilty: 'modules/mailListVisibilty',
     //Templates
     shortMail: 'templates/short-mail.html',
     //Plugins
     text:'plugins/text'
 
-  },
-  config: {
-    media:{
-      breakpointTablet:'30em',
-      breakpointTabletDesktop:'59.99em',
-      breakpointDesktop:'60em'
-    }
   }
 });
 
 
 //Short Mails
-require(['shortMailCreation'],function(createShortMailsString){
+require(['shortMailCreation', 'mailListVisibilty'],function(createShortMailsString, mailListVisibilty){
   'use strict';
 
   var shortMailsString = createShortMailsString(),
-      mailListEl = document.getElementById('mail-list');
+      mailListEl = document.getElementById('mail-list'),
+      labels = [
+        'clients',
+        'family',
+        'friends',
+        'social'
+      ],
+      i = 0,
+      l = labels.length;
 
+
+  //Build mail list
   mailListEl.innerHTML = shortMailsString;
 
+  //Add click event listeners to label side panel.
+  for(i,l; i < l; i++){
+    mailListVisibilty.showOnly(labels[i]);
+  }
 });
