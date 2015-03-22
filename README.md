@@ -1,7 +1,7 @@
 Teste frontend - Mail App
 =====
 
-Build
+Dev
 -----------------
 
 **SASS**
