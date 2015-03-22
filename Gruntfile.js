@@ -50,7 +50,7 @@ module.exports = function(grunt){
         options:{
           preserveLicenseComments: false,
           baseUrl: 'src/js',
-          out: 'public/scrips.min.js',
+          out: 'public/scripts.min.js',
           name: '../vendors/bower_components/almond/almond',
           include: 'main',
           mainConfigFile:'src/js/main.js'
@@ -78,6 +78,16 @@ module.exports = function(grunt){
       build:{
         src: 'public/styles.css'
       }
+    },
+    cachebreaker:{
+      build:{
+        options: {
+          match: ['scripts.min.js', 'styles.min.css'],
+        },
+        files: {
+          src: ['public/index.html']
+        }
+      }
     }
   });
 
@@ -89,24 +99,29 @@ module.exports = function(grunt){
   grunt.registerTask('default', ['menu']);
 
   /********************************************************
-      Tasks registers and loading
+      Tests tasks
   *********************************************************/
 
   grunt.registerTask('js-tests-report', function(){
-    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-contrib-copy');
 
     grunt.task.run('copy:tests');
     grunt.task.run('connect:tests');
   });
 
+  /********************************************************
+      Build tasks
+  *********************************************************/
+
   grunt.registerTask('build', function(){
-    grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-processhtml');
-    grunt.loadNpmTasks('grunt-contrib-requirejs');
-    grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-cache-breaker');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-requirejs');
+    grunt.loadNpmTasks('grunt-processhtml');
 
     //images
     grunt.task.run('copy:build');
@@ -121,5 +136,6 @@ module.exports = function(grunt){
 
     //index.html
     grunt.task.run('processhtml:build');
+    grunt.task.run('cachebreaker:build');
   });
 };
