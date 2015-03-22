@@ -28,11 +28,29 @@ module.exports = function(grunt){
       }
     },
     connect:{
+      src:{
+        options:{
+          hostname: 'localhost',
+          port: 0,
+          base: 'src',
+          open: true,
+          keepalive: true
+        }
+      },
       tests:{
         options:{
           hostname: 'localhost',
           port: 0,
           base: 'tests',
+          open: true,
+          keepalive: true
+        }
+      },
+      public:{
+        options:{
+          hostname: 'localhost',
+          port: 0,
+          base: 'public',
           open: true,
           keepalive: true
         }
@@ -99,10 +117,20 @@ module.exports = function(grunt){
   grunt.registerTask('default', ['menu']);
 
   /********************************************************
+      src tasks
+  *********************************************************/
+
+  grunt.registerTask('src-connect', function(){
+    grunt.loadNpmTasks('grunt-contrib-connect');
+
+    grunt.task.run('connect:src');
+  });
+
+  /********************************************************
       Tests tasks
   *********************************************************/
 
-  grunt.registerTask('js-tests-report', function(){
+  grunt.registerTask('tests-report', function(){
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-copy');
 
@@ -137,5 +165,15 @@ module.exports = function(grunt){
     //index.html
     grunt.task.run('processhtml:build');
     grunt.task.run('cachebreaker:build');
+  });
+
+  /********************************************************
+      Public tasks
+  *********************************************************/
+
+  grunt.registerTask('public-connect', function(){
+    grunt.loadNpmTasks('grunt-contrib-connect');
+
+    grunt.task.run('connect:public');
   });
 };
