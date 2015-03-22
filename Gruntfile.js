@@ -15,6 +15,16 @@ module.exports = function(grunt){
           }
 
         ]
+      },
+      build: {
+        files: [
+          {
+            expand: true,
+            cwd:'src/images/',
+            src: ['**/*','!**/*.db'],
+            dest: 'public/images'
+          }
+        ]
       }
     },
     connect:{
@@ -29,7 +39,7 @@ module.exports = function(grunt){
       }
     },
     requirejs:{
-      compile:{
+      build:{
         options:{
           preserveLicenseComments: false,
           baseUrl: 'src/js',
@@ -61,8 +71,9 @@ module.exports = function(grunt){
   });
 
   grunt.registerTask('build', function(){
+    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-requirejs');
-    grunt.task.run('requirejs:compile');
+    grunt.task.run('requirejs:build');
+    grunt.task.run('copy:build');
   });
-
 };
