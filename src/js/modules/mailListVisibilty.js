@@ -39,7 +39,7 @@ define(function(){
               //Label value of the mail
               var valueDataLabelAttr = elsShortMailList[i].getAttribute('data-label');
 
-              if(valueDataLabelAttr !== ('js-label-' + label)){
+              if(valueDataLabelAttr !== (label)){
                 //Case mail doens´t have the selected label value
                 elsShortMailList[i].setAttribute('hidden','');
               }else{
