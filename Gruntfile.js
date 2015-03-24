@@ -1,7 +1,7 @@
 module.exports = function(grunt){
   'use strict';
 
-  require('time-grunt')(grunt);
+  //require('time-grunt')(grunt);
 
   grunt.initConfig({
     copy:{
@@ -9,11 +9,38 @@ module.exports = function(grunt){
         files: [
           {
             expand: true,
+            cwd: 'src/js/modules/',
+            src: '*.*',
+            rename: function(dest, src){
+              return 'tests/js/modules/src-' + src;
+            }
+          },
+          {
+            expand: true,
+            cwd: 'src/js/templates/',
+            src: '*.*',
+            rename: function(dest, src){
+              return 'tests/js/templates/src-' + src;
+            }
+          },
+          {
+            expand: true,
             cwd: 'src/js/',
-            src: 'modules/*.js',
-            dest:'tests/js/src-scripts'
+            src: 'mails.json',
+            dest:'tests/js'
+          },
+          {
+            expand: true,
+            cwd: 'src/css/',
+            src: 'stylesheet.css',
+            dest:'tests/css'
+          },
+          {
+            expand: true,
+            cwd: 'src/images/',
+            src: '**/*',
+            dest:'tests/images'
           }
-
         ]
       },
       build: {
@@ -28,35 +55,37 @@ module.exports = function(grunt){
       }
     },
     connect:{
+      options:{
+        hostname: 'localhost',
+        port: 0,
+        open: true,
+        keepalive: true
+      },
       src:{
         options:{
-          hostname: 'localhost',
-          port: 0,
-          base: 'src',
-          open: true,
-          keepalive: true
+          base: 'src'
         }
       },
       tests:{
         options:{
-          hostname: 'localhost',
-          port: 0,
-          base: 'tests',
-          open: true,
-          keepalive: true
+          base: 'tests'
         }
       },
       public:{
         options:{
-          hostname: 'localhost',
-          port: 0,
-          base: 'public',
-          open: true,
-          keepalive: true
+          base: 'public'
         }
       }
     },
     processhtml: {
+      options:{
+        commentMarker: 'processHTML'
+      },
+      tests:{
+        files:{
+          'tests/index.html':'src/index.html'
+        }
+      },
       build:{
         files:{
           'public/index.html':'src/index.html'
@@ -133,8 +162,14 @@ module.exports = function(grunt){
   grunt.registerTask('tests-report', function(){
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-processhtml');
 
+    //scripts
     grunt.task.run('copy:tests');
+
+    //index.html
+    grunt.task.run('processhtml:tests');
+
     grunt.task.run('connect:tests');
   });
 

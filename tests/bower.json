@@ -1,6 +1,7 @@
 {
   "name": "mail-app.tests",
   "dependencies": {
+    "normalize.css": "~3.0.2",
     "requirejs": "~2.1.16"
   }
 }

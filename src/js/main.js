@@ -1,39 +1,23 @@
 requirejs.config({
   paths: {
     //Modules
+    app: 'modules/app',
     date: 'modules/date',
-    shortMailCreation: 'modules/shortMailCreation',
     mailListVisibilty: 'modules/mailListVisibilty',
+    shortMailCreation: 'modules/shortMailCreation',
+
     //Templates
     shortMail: 'templates/short-mail.html',
+
     //Plugins
     text:'plugins/text'
-
   }
 });
 
-
-//Short Mails
-require(['shortMailCreation', 'mailListVisibilty'],function(createShortMailsString, mailListVisibilty){
+require(['app'],function(app){
   'use strict';
 
-  var shortMailsString = createShortMailsString(),
-      mailListEl = document.getElementById('mail-list'),
-      labels = [
-        'clients',
-        'family',
-        'friends',
-        'social'
-      ],
-      i = 0,
-      l = labels.length;
-
-
-  //Build mail list
-  mailListEl.innerHTML = shortMailsString;
-
-  //Add click event listeners to label side panel.
-  for(i,l; i < l; i++){
-    mailListVisibilty.showOnly(labels[i]);
-  }
+  app();
 });
+
+
