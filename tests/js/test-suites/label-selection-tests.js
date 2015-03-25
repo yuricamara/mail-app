@@ -2,48 +2,78 @@ define(['date','chai'],function(date,chai){
 
   var expect = chai.expect;
 
-  var elsShortMailList = document.getElementsByClassName('js-short-mail');
+  var testLabel = function(label, click){
+      var elLabelSocial = document.getElementById('label-' + label),
+          elsShortMailList = document.getElementsByClassName('js-short-mail'),
+          i = 0,
+          l = 0;
 
-  var i = 0,
-      l = 0;
+      elLabelSocial.click();
+
+    if(click === '1st click'){
+      for(i = 0, l = elsShortMailList.length; i < l ; i++){
+        var valueDataLabelAttr = elsShortMailList[i].getAttribute('data-label');
+
+        if(valueDataLabelAttr !== (label)){
+          expect(elsShortMailList[i].getAttribute('hidden').length).to.be.equal(0);
+        }else{
+          expect(elsShortMailList[i].getAttribute('hidden')).to.be.null;
+        }
+      }
+    }
+
+    if(click === '2nd click'){
+      for(i = 0, l = elsShortMailList.length; i < l ; i++){
+        var valueDataLabelAttr = elsShortMailList[i].getAttribute('data-label');
+
+        expect(elsShortMailList[i].getAttribute('hidden')).to.be.null;
+
+      }
+    }
+  };
 
 
   describe('Clicking on the label', function(){
+    var labelToTest = [
+      'social',
+      'family',
+      'friends',
+      'clients'
+    ];
 
-    it('social for the first time, all mails except social labeled, should have the <section> element with the hidden attribute', function(){
-      var label = 'social',
-          elLabelSocial = document.getElementById('label-' + label);
-
-      elLabelSocial.click();
-
-      for(i = 0, l = elsShortMailList.length; i < l ; i++){
-        var valueDataLabelAttr = elsShortMailList[i].getAttribute('data-label');
-
-        if(valueDataLabelAttr !== (label)){
-          expect(elsShortMailList[i].getAttribute('hidden').length).to.be.equal(0);
-        }else{
-          expect(elsShortMailList[i].getAttribute('hidden')).to.be.null;
-        }
-      }
-
+    //social
+    it(labelToTest[0] + ' for the first time all mails except '+ labelToTest[0] + ' labeled, should have the <section> element with the hidden attribute.', function(){
+      testLabel(labelToTest[0],'1st click');
     });
 
-    it('family for the first time, all mails except social labeled, should have the <section> element with the hidden attribute', function(){
-      var label = 'family',
-          elLabelSocial = document.getElementById('label-' + label);
+    it(labelToTest[0] + ' for the second time all mails should not have the <section> element with the hidden attribute.', function(){
+      testLabel(labelToTest[0],'2nd click');
+    });
 
-      elLabelSocial.click();
 
-      for(i = 0, l = elsShortMailList.length; i < l ; i++){
-        var valueDataLabelAttr = elsShortMailList[i].getAttribute('data-label');
+    //family
+    it(labelToTest[1] + ' for the first time all mails except '+ labelToTest[1] + ' labeled, should have the <section> element with the hidden attribute.', function(){
+      testLabel(labelToTest[1]);
+    });
+    it(labelToTest[1] + ' for the second time all mails should not have the <section> element with the hidden attribute.', function(){
+      testLabel(labelToTest[1],'2nd click');
+    });
 
-        if(valueDataLabelAttr !== (label)){
-          expect(elsShortMailList[i].getAttribute('hidden').length).to.be.equal(0);
-        }else{
-          expect(elsShortMailList[i].getAttribute('hidden')).to.be.null;
-        }
-      }
 
+    //friends
+    it(labelToTest[2] + ' for the first time all mails except '+ labelToTest[2] + ' labeled, should have the <section> element with the hidden attribute.', function(){
+      testLabel(labelToTest[2]);
+    });
+    it(labelToTest[2] + ' for the second time all mails should not have the <section> element with the hidden attribute.', function(){
+      testLabel(labelToTest[2],'2nd click');
+    });
+
+    //clients
+    it(labelToTest[3] + ' for the first time all mails except '+ labelToTest[3] + ' labeled, should have the <section> element with the hidden attribute.', function(){
+      testLabel(labelToTest[3]);
+    });
+    it(labelToTest[3] + ' for the second time all mails should not have the <section> element with the hidden attribute.', function(){
+      testLabel(labelToTest[3],'2nd click');
     });
 
   });
