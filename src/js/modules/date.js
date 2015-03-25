@@ -40,7 +40,6 @@ define(function(){
     }else{
       return {};
     }
-
   };
 
   return formatDate;
