@@ -71,11 +71,7 @@ _m-mail-list.scss
         background-color: transparent;
 
       &-arrow-down{
-
-
         display: none;
-
-
 
         @include bpd{
           display: block;
@@ -95,26 +91,4 @@ _m-mail-list.scss
       }
     }
   }
-
-  &_loading{
-    display: none;
-  }
-
-  &_wrap:empty + &_loading{
-    padding-top: 30px;
-    height: 100%;
-    width: 100%;
-
-    display: block;
-
-    position: absolute;
-    top: 0;
-
-    font-size: 2.2em;
-    color: palette(secondary,base);
-    text-align: center;
-
-    background-color: palette(primary,lightest);
-  }
-
 }
