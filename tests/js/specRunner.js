@@ -5,7 +5,7 @@ require.config({
     mocha : '/node_modules/mocha/mocha',
 
     //Plugins
-    text : 'plugins/text',
+    text:'../vendors/bower_components/text/text',
 
     //Templates
     shortMail: 'templates/src-short-mail.html',
