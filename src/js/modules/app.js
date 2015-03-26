@@ -28,12 +28,10 @@ define(['shortMailCreation', 'mailListVisibilty'],function(createShortMailsStrin
     }
   };
 
-  var execApp = function(){
+  return function(){
     objApp
       .buildMailList();
     objApp
       .addClickListenerToLabels();
   };
-
-  return execApp;
 });
