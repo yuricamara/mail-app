@@ -29,28 +29,6 @@ _m-mail-list.scss
       position: relative;
     }
   }
-
-  &_header-title{
-    color: palette(primary,lightest);
-    font-size: 2.6em;
-    font-weight: normal;
-    text-align: center;
-
-    &--unread{
-      font-size: 0.6em;
-      @include bpd{
-        display: inline;
-      }
-    }
-
-    @include bpd{
-      color: palette(primary,darkest);
-      font-size: 2.8em;
-    }
-  }
-
-
-
   &_header-menu{
     margin-left: 15px;
 
@@ -89,6 +67,45 @@ _m-mail-list.scss
           display: none;
         }
       }
+    }
+  }
+
+  &_header-title{
+    color: palette(primary,lightest);
+    font-size: 2.6em;
+    font-weight: normal;
+    text-align: center;
+
+    &--unread{
+      font-size: 0.6em;
+      @include bpd{
+        display: inline;
+      }
+    }
+
+    @include bpd{
+      color: palette(primary,darkest);
+      font-size: 2.8em;
+    }
+  }
+
+  &_zero-mails{
+    margin: 2em auto 0;
+    width: 85px;
+
+    font-size: 1.4em;
+    line-height: 1.2em;
+    text-indent: 5px;
+
+    &:before{
+      content: " ";
+      @include square(15px);
+
+      display: block;
+
+      float: left;
+
+      background-color: #E5763E;
     }
   }
 }

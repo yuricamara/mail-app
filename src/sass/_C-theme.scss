@@ -12,3 +12,26 @@ _theme.scss
     background-color: palette(primary,light20);
   }
 }
+
+$labelsColors: (
+  clients #e5763e,
+  social #e1c557,
+  family #8bcbca,
+  friends #b48cec,
+  to-do white
+);
+
+@each $name,$value in $labelsColors{
+  .th-label-#{$name}{
+    background-color: $value;
+  }
+
+  //pe pseudo-element
+  .th-label-#{$name}-pe{
+      &:after,
+      &:before{
+        background-color: $value;
+      }
+    }
+}
+
