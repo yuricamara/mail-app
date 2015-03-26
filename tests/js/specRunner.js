@@ -12,7 +12,7 @@ require.config({
 
     //Modules to test
     app: 'modules/src-app',
-    date : 'modules/src-date',
+    datesHandling : 'modules/src-datesHandling',
     mailListVisibilty: 'modules/src-mailListVisibilty',
     shortMailCreation : 'modules/src-shortMailCreation',
 
@@ -27,7 +27,6 @@ require.config({
     }
   }
 });
-
 
 require(['app'],function(app){
   'use strict';

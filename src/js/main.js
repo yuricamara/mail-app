@@ -2,7 +2,7 @@ requirejs.config({
   paths: {
     //Modules
     app: 'modules/app',
-    date: 'modules/date',
+    datesHandling: 'modules/datesHandling',
     mailListVisibilty: 'modules/mailListVisibilty',
     shortMailCreation: 'modules/shortMailCreation',
 

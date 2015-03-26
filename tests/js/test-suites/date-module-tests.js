@@ -1,4 +1,4 @@
-define(['date','chai'],function(date,chai){
+define(['datesHandling','chai'],function(date,chai){
 
   var expect = chai.expect;
 

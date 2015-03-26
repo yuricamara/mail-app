@@ -1,4 +1,4 @@
-define(['date','chai'],function(date,chai){
+define(['chai'],function(chai){
 
   var expect = chai.expect;
 
