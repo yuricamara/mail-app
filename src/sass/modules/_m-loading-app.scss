@@ -1,0 +1,18 @@
+/**********************
+_m-loading-app.scss
+**********************/
+
+.m-loading-app{
+  height: 100%;
+  padding-top: 20px;
+
+  color: palette(secondary,base);
+  font-size: 2rem;
+  text-align: center;
+
+  background-color: palette(primary,base);
+
+  @include bpd{
+    font-size: 3rem;
+  }
+}

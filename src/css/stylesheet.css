@@ -311,6 +311,22 @@ _m-labels.scss
         text-transform: uppercase; } }
 
 /**********************
+_m-loading-app.scss
+**********************/
+/* line 5, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-loading-app.scss */
+.m-loading-app {
+  height: 100%;
+  padding-top: 20px;
+  color: #97c89b;
+  font-size: 2rem;
+  text-align: center;
+  background-color: #36393e; }
+  @media (min-width: 60em) {
+    /* line 5, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-loading-app.scss */
+    .m-loading-app {
+      font-size: 3rem; } }
+
+/**********************
 _m-mail-list.scss
 **********************/
 /* line 4, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-mail-list.scss */

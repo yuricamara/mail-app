@@ -22,14 +22,16 @@
   <title>Mail App</title>
 </head>
 <body>
-  <div class="l-wrap">
-    <noscript>
-      <div class="m-noscript">
-        <h1 class="m-noscript_title">Javascript is required!</h1>
-        <p class="m-noscript_information">You must have Javascript enabled to run this app properly.</p>
-      </div>
-    </noscript>
-
+  <noscript>
+    <div class="m-noscript">
+      <h1 class="m-noscript_title">Javascript is required!</h1>
+      <p class="m-noscript_information">You must have Javascript enabled to run this app properly.</p>
+    </div>
+  </noscript>
+  <p id="loading-app" class="m-loading-app">
+    Loading...
+  </p>
+  <div id="app" class="l-wrap" hidden>
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
       <style type="text/css">
         <![CDATA[

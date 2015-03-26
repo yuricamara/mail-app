@@ -3,6 +3,14 @@ define(['shortMailCreation', 'mailListVisibilty'],function(createShortMailsStrin
 
   var objApp = {
 
+    showApp : function(){
+      var loading = document.getElementById('loading-app'),
+          app = document.getElementById('app');
+
+      loading.setAttribute('hidden','');
+      app.removeAttribute('hidden');
+    },
+
     buildMailList : function(){
 
       var mailListEl = document.getElementById('mail-list');
@@ -33,5 +41,8 @@ define(['shortMailCreation', 'mailListVisibilty'],function(createShortMailsStrin
       .buildMailList();
     objApp
       .addClickListenerToLabels();
+
+    objApp
+      .showApp();
   };
 });
