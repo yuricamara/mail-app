@@ -122,6 +122,13 @@ module.exports = function(grunt){
       }
     },
     clean:{
+      tests:{
+        src: [
+          'tests/js/templates',
+          'tests/js/modules',
+          'tests/images'
+        ]
+      },
       build:{
         src: 'public/styles.css'
       }
@@ -160,9 +167,13 @@ module.exports = function(grunt){
   *********************************************************/
 
   grunt.registerTask('tests-report', function(){
+    grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-processhtml');
+
+    //Delete files
+    grunt.task.run('clean:tests');
 
     //scripts
     grunt.task.run('copy:tests');
