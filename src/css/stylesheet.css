@@ -400,8 +400,7 @@ _m-mail-list.scss
       width: 15px;
       border-radius: 0;
       display: block;
-      float: left;
-      background-color: #E5763E; }
+      float: left; }
 
 /**********************
 _m-mail-opened.scss

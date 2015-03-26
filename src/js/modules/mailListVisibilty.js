@@ -53,12 +53,16 @@ define(function(){
       }
     },
 
-    showMessageNone: function(hasMailWithLabel){
+    showMessageNone: function(hasMailWithLabel,label){
       var elZeroMails = document.getElementById('mail-list-zero-mails');
 
       if(!hasMailWithLabel){
         elZeroMails
           .removeAttribute('hidden');
+        elZeroMails
+          .className = '';
+        elZeroMails
+          .className = 'm-mail-list_zero-mails' + ' th-label-' + label + '-pe';
       }else{
         elZeroMails
           .setAttribute('hidden','');
@@ -101,7 +105,7 @@ define(function(){
         objMailListVisibilty
           .setAttrToLabelSelected(elsLabels, elLabel);
         objMailListVisibilty
-          .showMessageNone(hasMailWithLabel);
+          .showMessageNone(hasMailWithLabel, label);
       }
     });
   };
