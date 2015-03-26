@@ -23,14 +23,17 @@ define(['shortMailCreation', 'mailListVisibilty'],function(createShortMailsStrin
         l = labels.length;
 
       for(i,l; i < l; i++){
-        mailListVisibilty.showOnly(labels[i]);
+        mailListVisibilty
+          .init(labels[i]);
       }
     }
   };
 
   var execApp = function(){
-    objApp.buildMailList();
-    objApp.addClickListenerToLabels();
+    objApp
+      .buildMailList();
+    objApp
+      .addClickListenerToLabels();
   };
 
   return execApp;

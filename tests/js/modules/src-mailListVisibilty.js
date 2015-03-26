@@ -6,9 +6,6 @@
 
 define(function(){
 
-  //Mail list els
-  var elsShortMailList = document.getElementsByClassName('js-short-mail');
-
   var objMailListVisibilty = {
 
     /**
@@ -16,60 +13,104 @@ define(function(){
      * @param {String} label Label name
      */
 
-    showOnly: function(label){
+    init: function(label){
 
       //A label el of the side panel
-      var elLabel = document.getElementById('label-' + label),
+      var elLabel = objMailListVisibilty.elLabel(label),
       //All the labels els of the side panel
-          elsLabels = document.getElementsByClassName('js-labels');
+          elsLabels = objMailListVisibilty.elsLabels;
 
       elLabel.addEventListener('click',function(){
-        var i = 0,
-            l = 0;
-
           if(elLabel.hasAttribute('data-selected')){
             //Show all the mail list
-            objMailListVisibilty.showAll();
+            objMailListVisibilty
+              .showAll();
 
-            elLabel.removeAttribute('data-selected');
+            elLabel
+              .removeAttribute('data-selected');
           }else{
-            //Show only the mails of selected label
+            var hasMailWithLabel = objMailListVisibilty.showOnlyMatchingLabel(label);
 
-            for(i = 0, l = elsShortMailList.length; i < l ; i++){
-              //Label value of the mail
-              var valueDataLabelAttr = elsShortMailList[i].getAttribute('data-label');
-
-              if(valueDataLabelAttr !== (label)){
-                //Case mail doens´t have the selected label value
-                elsShortMailList[i].setAttribute('hidden','');
-              }else{
-                //Case mail has the selected label valeu
-                elsShortMailList[i].removeAttribute('hidden');
-              }
-            }
-
-            for(i = 0, l = elsLabels.length; i < l; i++){
-              elsLabels[i].removeAttribute('data-selected');
-            }
-
-            //Set attr when only the mails from the label are visible
-            elLabel.setAttribute('data-selected','');
+            objMailListVisibilty
+                .setAttrToLabelSelected(elsLabels, elLabel);
+            objMailListVisibilty
+                .showMessageNone(hasMailWithLabel);
           }
       });
     },
 
-    /**
-     * Show all the mail list
-     */
+    //DOM Elements
+
+    elsShortMailList: document.getElementsByClassName('js-short-mail'),
+
+    elLabel: function(label){
+      return document.getElementById('label-' + label);
+    },
+
+    elsLabels: document.getElementsByClassName('js-labels'),
+
+    showOnlyMatchingLabel: function(label){
+
+      var elsShortMailList = objMailListVisibilty.elsShortMailList,
+          hasMailWithLabel = false,
+          i,
+          l;
+
+      for(i = 0, l = elsShortMailList.length; i < l ; i++){
+        //Label value of the mail
+        var valueDataLabelAttr = elsShortMailList[i].getAttribute('data-label');
+
+        if(valueDataLabelAttr !== (label)){
+          //Case mail doens´t have the selected label value
+          elsShortMailList[i]
+            .setAttribute('hidden','');
+        }else{
+          //Case mail has the selected label value
+          elsShortMailList[i]
+            .removeAttribute('hidden');
+          hasMailWithLabel = true;
+        }
+      }
+
+      return hasMailWithLabel;
+    },
 
     showAll: function(){
-      var i = 0,
+      var elsShortMailList = objMailListVisibilty.elsShortMailList,
+          i = 0,
           l = 0;
 
       for(i = 0, l = elsShortMailList.length; i < l ; i++){
-        elsShortMailList[i].removeAttribute('hidden');
+        elsShortMailList[i]
+          .removeAttribute('hidden');
       }
+    },
+
+    showMessageNone: function(hasMailWithLabel){
+      var elZeroMails = document.getElementById('mail-list-zero-mails');
+
+      if(!hasMailWithLabel){
+        elZeroMails
+          .removeAttribute('hidden');
+      }else{
+        elZeroMails
+          .setAttribute('hidden','');
+      }
+    },
+
+    setAttrToLabelSelected: function(elsLabels, elLabel){
+      var i,
+          l;
+
+      for(i = 0, l = elsLabels.length; i < l; i++){
+        elsLabels[i]
+          .removeAttribute('data-selected');
+      }
+
+      elLabel
+        .setAttribute('data-selected','');
     }
+
   };
 
   return objMailListVisibilty;
