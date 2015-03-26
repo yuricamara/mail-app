@@ -8,39 +8,6 @@ define(function(){
 
   var objMailListVisibilty = {
 
-    /**
-     * Show/hide mails of the mail list according to label selection
-     * @param {String} label Label name
-     */
-
-    init: function(label){
-
-      //A label el of the side panel
-      var elLabel = objMailListVisibilty.elLabel(label),
-      //All the labels els of the side panel
-          elsLabels = objMailListVisibilty.elsLabels;
-
-      elLabel.addEventListener('click',function(){
-          if(elLabel.hasAttribute('data-selected')){
-            //Show all the mail list
-            objMailListVisibilty
-              .showAll();
-
-            elLabel
-              .removeAttribute('data-selected');
-          }else{
-            var hasMailWithLabel = objMailListVisibilty.showOnlyMatchingLabel(label);
-
-            objMailListVisibilty
-                .setAttrToLabelSelected(elsLabels, elLabel);
-            objMailListVisibilty
-                .showMessageNone(hasMailWithLabel);
-          }
-      });
-    },
-
-    //DOM Elements
-
     elsShortMailList: document.getElementsByClassName('js-short-mail'),
 
     elLabel: function(label){
@@ -113,6 +80,29 @@ define(function(){
 
   };
 
-  return objMailListVisibilty;
+  return function(label){
 
+    //A label el of the side panel
+    var elLabel = objMailListVisibilty.elLabel(label),
+        //All the labels els of the side panel
+        elsLabels = objMailListVisibilty.elsLabels;
+
+    elLabel.addEventListener('click',function(){
+      if(elLabel.hasAttribute('data-selected')){
+        //Show all the mail list
+        objMailListVisibilty
+          .showAll();
+
+        elLabel
+          .removeAttribute('data-selected');
+      }else{
+        var hasMailWithLabel = objMailListVisibilty.showOnlyMatchingLabel(label);
+
+        objMailListVisibilty
+          .setAttrToLabelSelected(elsLabels, elLabel);
+        objMailListVisibilty
+          .showMessageNone(hasMailWithLabel);
+      }
+    });
+  };
 });

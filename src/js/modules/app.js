@@ -23,8 +23,7 @@ define(['shortMailCreation', 'mailListVisibilty'],function(createShortMailsStrin
         l = labels.length;
 
       for(i,l; i < l; i++){
-        mailListVisibilty
-          .init(labels[i]);
+        mailListVisibilty(labels[i]);
       }
     }
   };
