@@ -24,16 +24,12 @@ module.exports = function(grunt){
             }
           },
           {
-            expand: true,
-            cwd: 'src/js/',
-            src: 'mails.json',
-            dest:'tests/js'
+            src: 'src/js/mails.json',
+            dest:'tests/js/mails.json'
           },
           {
-            expand: true,
-            cwd: 'src/css/',
-            src: 'stylesheet.css',
-            dest:'tests/css'
+            src: 'src/css/stylesheet.css',
+            dest:'tests/css/stylesheet.css'
           },
           {
             expand: true,
