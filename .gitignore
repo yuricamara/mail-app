@@ -6,3 +6,9 @@ public
 bower_components
 node_modules
 Thumbs.db
+tests/css/stylesheet.css
+tests/images/
+tests/index.html
+tests/js/mails.json
+tests/js/modules/
+tests/js/templates/
