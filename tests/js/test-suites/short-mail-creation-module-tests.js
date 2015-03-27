@@ -10,7 +10,7 @@ define(['shortMailCreation','chai'], function(shortMailCreation, chai){
     });
 
     describe('if not receive an empty JSON', function(){
-      it('shoud not return a string with a %xxx% substring inside.', function(){
+      it('shoud not return a string with or with {%= or with %}) substring.', function(){
         expect(mailList).to.not.match(/\({%=/);
         expect(mailList).to.not.match(/%}\)/);
       });
