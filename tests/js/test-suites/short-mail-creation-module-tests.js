@@ -11,7 +11,8 @@ define(['shortMailCreation','chai'], function(shortMailCreation, chai){
 
     describe('if not receive an empty JSON', function(){
       it('shoud not return a string with a %xxx% substring inside.', function(){
-        expect(mailList).to.not.match(/\%[a-zA-Z0-9\_\-]+\%/);
+        expect(mailList).to.not.match(/\({%=/);
+        expect(mailList).to.not.match(/%}\)/);
       });
     });
   });

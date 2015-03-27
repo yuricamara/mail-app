@@ -14,35 +14,37 @@ define(['text!shortMail','text!mails.json','datesHandling'],function(shortMailTp
   var createShortMail = function(){
 
     var mailsJSONArray = JSON.parse('['+mailsJSON+']'),
-        mailsJSONArrayLength = mailsJSONArray.length,
-        iterator = 0,
+        l = mailsJSONArray.length,
+        i = 0,
         shortMailTplStrParsed = "",
         shortMailStr = "";
 
-    for(iterator, mailsJSONArrayLength; iterator < mailsJSONArrayLength; iterator++){
+    for(i, l; i < l; i++){
 
-      var senderName = mailsJSONArray[iterator].owner || 'me',
-          subject = mailsJSONArray[iterator].title || '',
-          mailNumber = mailsJSONArray[iterator].id || '',
-          contentLong = mailsJSONArray[iterator].body || '',
+      var senderName = mailsJSONArray[i].owner || 'me',
+          subject = mailsJSONArray[i].title || '',
+          mailNumber = mailsJSONArray[i].id || '',
+          contentLong = mailsJSONArray[i].body || '',
           contentShort = contentLong.slice(0,35 - subject.length) + '...' || '',
-          monthNumber = getDateInfo(mailsJSONArray[iterator].created_at).monthNumber,
-          monthString = getDateInfo(mailsJSONArray[iterator].created_at).monthShortString,
-          day = getDateInfo(mailsJSONArray[iterator].created_at).day,
-          category = mailsJSONArray[iterator].category.replace(/\s/g , '-').toLowerCase()
+          monthNumber = getDateInfo(mailsJSONArray[i].created_at).monthNumber,
+          monthString = getDateInfo(mailsJSONArray[i].created_at).monthShortString,
+          day = getDateInfo(mailsJSONArray[i].created_at).day,
+          category = mailsJSONArray[i].category.replace(/\s/g , '-').toLowerCase()
       ;
 
 
       shortMailTplStrParsed = shortMailTplStr
-        .replace(/%mail_number%/g, mailNumber)
-        .replace(/%sender_name%/g, senderName)
-        .replace(/%subject%/g, subject)
-        .replace('%content_short%', contentShort)
-        .replace('%content_long%', contentLong)
-        .replace('%month_number%', monthNumber)
-        .replace('%month_string%', monthString)
-        .replace(/%day%/g, day)
-        .replace(/%category%/g,category)
+        .replace(/\({%=mail_number%}\)/g, mailNumber)
+        .replace(/\({%=sender_name%}\)/g, senderName)
+        .replace('({%=month_number%})', monthNumber)
+        .replace('({%=month_string%})', monthString)
+        .replace(/\({%=day%}\)/g, day)
+        .replace(/\({%=category%}\)/g,category)
+
+        //Biggest strings
+        .replace(/\({%=subject%}\)/g, subject)
+        .replace('({%=content_short%})', contentShort)
+        .replace('({%=content_long%})', contentLong)
       ;
 
       shortMailStr += shortMailTplStrParsed;
