@@ -190,14 +190,14 @@ $mailOpenedDivingLine: 1px solid palette(primary,light20);
   }
 
   &_item-extension{
-    @include center-text-vertically(1.6em);
-
+    height: 1.6em;
     margin-right: 5px;
     width: 40px;
 
     display: inline-block;
 
     color: white;
+    line-height: 1.6em;
     text-align: center;
 
     background-color: palette(primary,base);
@@ -239,15 +239,14 @@ $mailOpenedDivingLine: 1px solid palette(primary,light20);
 
   }
 
-
   &_qty{
-    @include center-text-vertically(4em);
-
+    height: 4em;
     width: 100%;
 
     float: left;
 
     font-size: 1.1em;
+    line-height: 4em;
   }
 }
 

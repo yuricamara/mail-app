@@ -30,8 +30,6 @@ _m-labels.scss
     text-indent: -9999px;
 
     @include bpd{
-      @include center-text-vertically(3em);
-
       &:hover{
         outline: 1px solid palette(primary, light60);
       }
@@ -42,6 +40,7 @@ _m-labels.scss
 
       color: palette(primary, lightest);
       font-size: 1.3em;
+      line-height: 3em;
       text-indent: 0;
     }
 
