@@ -1,0 +1,12 @@
+.l-wrap {
+  display: none !important;
+}
+
+#mocha-report > .suite > h1{
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+#mocha .test{
+  margin: 10px 0 10px 15px;
+}
