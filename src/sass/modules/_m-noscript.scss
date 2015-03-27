@@ -3,10 +3,11 @@ _m-noscript.scss
 **********************/
 
 .m-noscript{
+  height: 50%;
+  min-height: 100px;
   width: 100%;
 
   position: fixed;
-  z-index: 1;
 
   color: #F00;
   font-size: 1rem;
@@ -14,11 +15,22 @@ _m-noscript.scss
 
   background-color: #FFF;
 
+  &_information,
+  &_link{
+    font-size: 1.4em;
+    line-height: 1.3;
+  }
+
+  &_link{
+    color: #634BD0;;
+    text-align: left;
+    text-decoration: underline;
+  }
+
   &_title{
+    height: 45%;
+
     font-size: 2.2em;
   }
 
-  &_information{
-    font-size: 1.4em;
-  }
 }
