@@ -1,21 +1,26 @@
-define(['shortMailCreation', 'mailListVisibilty'],function(createShortMailsString, mailListVisibilty){
+define([
+  'mailCreation',
+  'mailOpenedControl',
+  'mailListVisibilty'
+],
+function(mdlMailCreation, mdlMailOpenedControl, mdlMailListVisibilty){
   'use strict';
 
   var objApp = {
 
     showApp : function(){
-      var loading = document.getElementById('loading-app'),
-          app = document.getElementById('app');
+      var elLoading = document.getElementById('loading-app'),
+          elApp = document.getElementById('app');
 
-      loading.setAttribute('hidden','');
-      app.removeAttribute('hidden');
+      elLoading.setAttribute('hidden','');
+      elApp.removeAttribute('hidden');
     },
 
     buildMailList : function(){
 
-      var mailListEl = document.getElementById('mail-list');
+      var elMailList = document.getElementById('mail-list');
 
-      mailListEl.innerHTML = createShortMailsString();
+      elMailList.innerHTML = mdlMailCreation.createShortMails();
 
     },
 
@@ -31,9 +36,14 @@ define(['shortMailCreation', 'mailListVisibilty'],function(createShortMailsStrin
         l = labels.length;
 
       for(i,l; i < l; i++){
-        mailListVisibilty(labels[i]);
+        mdlMailListVisibilty(labels[i]);
       }
+    },
+
+    addClickListenerToMailList : function(){
+      mdlMailOpenedControl.addClickListeners();
     }
+
   };
 
   return function(){
@@ -41,7 +51,8 @@ define(['shortMailCreation', 'mailListVisibilty'],function(createShortMailsStrin
       .buildMailList();
     objApp
       .addClickListenerToLabels();
-
+    objApp
+      .addClickListenerToMailList();
     objApp
       .showApp();
   };

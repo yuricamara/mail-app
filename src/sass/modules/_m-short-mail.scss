@@ -4,6 +4,7 @@ _m-short-mail.scss
 
 .m-short-mail{
   @include clearfix;
+
   border-bottom: 2px solid palette(primary,light20);
   padding: 1em;
   height: 7em;
@@ -12,6 +13,8 @@ _m-short-mail.scss
   position: relative;
 
   font-size: 1rem;
+
+  cursor: pointer;
 
   @include bpd{
     border-bottom: 1px solid palette(primary,light30);
@@ -176,4 +179,27 @@ _m-short-mail.scss
       display: block;
     }
   }
+}
+
+.m-short-mail--active{
+  @include bpd{
+    background-color: palette(secondary, base);
+  }
+}
+
+.m-short-mail--active .m-short-mail{
+  &_maildate,
+  &_message,
+  &_sender{
+    @include bpd{
+      color: white;
+    }
+  }
+
+  &_label{
+    @include bpd{
+      border-color: transparent;
+    }
+  }
+
 }

@@ -3,10 +3,13 @@ requirejs.config({
     //Modules
     app: 'modules/app',
     datesHandling: 'modules/datesHandling',
+    mailInfosFromJSON: 'modules/mailInfosFromJSON',
     mailListVisibilty: 'modules/mailListVisibilty',
-    shortMailCreation: 'modules/shortMailCreation',
+    mailOpenedControl: 'modules/mailOpenedControl',
+    mailCreation: 'modules/mailCreation',
 
     //Templates
+    openedMail: 'templates/opened-mail.html',
     shortMail: 'templates/short-mail.html',
 
     //Plugins

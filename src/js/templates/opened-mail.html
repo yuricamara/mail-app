@@ -1,4 +1,4 @@
-<article class="m-mail-opened">
+<article id="mail-({%=mail_number%})" class="m-mail-opened">
 
   <!-- Acessibility reference -->
   <h2 class="m-mail-opened_title">Opened email</h2>
@@ -36,7 +36,7 @@
     </div>
     <div class="m-mail-opened_header_bottom">
       <div class="m-mail-opened_header_bottom_left">
-        <img class="m-mail-opened_header_sender-picture" src="images/contacts/mily-desktop.jpg" srcset="images/contacts/mily-desktop.jpg 1x, images/contacts/mily-desktop@2x.jpg 2x"  width="35" height="35" alt="Mily´s photo">
+        <img class="m-mail-opened_header_sender-picture" src="images/contacts/({%=sender_name%})-desktop.jpg" srcset="images/contacts/({%=sender_name%})-desktop.jpg 1x, images/contacts/({%=sender_name%})-desktop@2x.jpg 2x"  width="35" height="35" alt="Mily´s photo">
 
         <p class="m-mail-opened_header_exchange">
           <strong class="m-mail-opened_header_exchange-sender">({%=sender_name%})</strong>to me
@@ -82,7 +82,7 @@
         <p class="m-mail-opened_header_attachments-qty">(2)</p>
 
         <time class="m-mail-opened_header_date" datetime="2014-09-20T23:30">
-          Today, ({%=month_string%}) ({%=day%}), 11:30 PM
+          Today, ({%=month_string%}) ({%=day%}), ({%=time%})
         </time>
       </div>
     </div>

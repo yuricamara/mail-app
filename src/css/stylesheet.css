@@ -654,7 +654,8 @@ _m-short-mail.scss
   height: 7em;
   width: 100%;
   position: relative;
-  font-size: 1rem; }
+  font-size: 1rem;
+  cursor: pointer; }
   /* line 2, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/helpers/mixins/_clearfix.scss */
   .m-short-mail:before, .m-short-mail:after {
     content: "";
@@ -669,7 +670,7 @@ _m-short-mail.scss
     /* line 5, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
     .m-short-mail {
       border-bottom: 1px solid #efefef; } }
-  /* line 20, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
+  /* line 23, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
   .m-short-mail_title {
     height: 1px;
     width: 1px;
@@ -677,27 +678,27 @@ _m-short-mail.scss
     left: -9999px;
     top: auto;
     overflow: hidden; }
-  /* line 26, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
+  /* line 29, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
   .m-short-mail_icon-clips, .m-short-mail_icon-star {
     position: absolute;
     right: 0; }
-  /* line 32, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
+  /* line 35, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
   .m-short-mail_icon-clips {
     top: 20px; }
     @media (min-width: 60em) {
-      /* line 32, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
+      /* line 35, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
       .m-short-mail_icon-clips {
         right: 45px;
         top: 5px; } }
-  /* line 41, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
+  /* line 44, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
   .m-short-mail_icon-star {
     top: 40px; }
     @media (min-width: 60em) {
-      /* line 41, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
+      /* line 44, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
       .m-short-mail_icon-star {
         left: -20px;
         top: 25px; } }
-  /* line 51, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
+  /* line 54, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
   .m-short-mail_label {
     height: 13px;
     width: 13px;
@@ -709,68 +710,68 @@ _m-short-mail.scss
     display: block;
     text-indent: -9999px; }
     @media (min-width: 60em) {
-      /* line 51, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
+      /* line 54, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
       .m-short-mail_label {
         height: 13px;
         width: 13px;
         border-radius: 0;
         border: 1px solid #efefef;
         left: 15px; } }
-    /* line 71, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
+    /* line 74, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
     .m-short-mail_label--clients {
       background-color: #e5763e; }
-    /* line 75, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
+    /* line 78, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
     .m-short-mail_label--social {
       background-color: #e1c557; }
-    /* line 79, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
+    /* line 82, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
     .m-short-mail_label--family {
       background-color: #8bcbca; }
-    /* line 83, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
+    /* line 86, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
     .m-short-mail_label--friends {
       background-color: #b48cec; }
-  /* line 88, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
+  /* line 91, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
   .m-short-mail_sender-picture {
     float: left;
     border-radius: 60px; }
     @media (min-width: 60em) {
-      /* line 88, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
+      /* line 91, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
       .m-short-mail_sender-picture {
         display: none; } }
-  /* line 97, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
+  /* line 100, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
   .m-short-mail_content {
     margin-left: 60px;
     padding-left: 10px;
     position: relative; }
     @media (min-width: 60em) {
-      /* line 97, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
+      /* line 100, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
       .m-short-mail_content {
         margin-left: 25px;
         padding-left: 0; } }
-  /* line 109, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
+  /* line 112, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
   .m-short-mail_top {
     margin: 0.5em 0;
     width: 100%;
     float: left; }
-  /* line 116, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
+  /* line 119, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
   .m-short-mail_sender {
     float: left;
     width: 58%;
     font-size: 1.6em; }
-  /* line 123, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
+  /* line 126, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
   .m-short-mail_infos {
     height: 19px;
     padding: 5px 0;
     width: 42%;
     float: right;
     font-size: 1.4em; }
-  /* line 133, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
+  /* line 136, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
   .m-short-mail_maildate {
     width: 50px;
     float: right;
     color: #918F8F;
     font-size: 1.3em;
     text-align: right; }
-  /* line 143, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
+  /* line 146, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
   .m-short-mail_message {
     padding-right: 20px;
     width: 100%;
@@ -778,26 +779,40 @@ _m-short-mail.scss
     color: #6b6a6f;
     font-size: 1.3em; }
   @media (min-width: 30em) and (max-width: 59.99em) {
-    /* line 155, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
+    /* line 158, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
     .m-short-mail_short-body {
       display: none; } }
   @media (min-width: 60em) {
-    /* line 155, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
+    /* line 158, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
     .m-short-mail_short-body {
       display: none; } }
-  /* line 165, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
+  /* line 168, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
   .m-short-mail_long-body {
     display: none;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; }
     @media (min-width: 30em) and (max-width: 59.99em) {
-      /* line 165, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
+      /* line 168, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
       .m-short-mail_long-body {
         display: block; } }
     @media (min-width: 60em) {
-      /* line 165, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
+      /* line 168, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
       .m-short-mail_long-body {
         display: block; } }
+
+@media (min-width: 60em) {
+  /* line 184, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
+  .m-short-mail--active {
+    background-color: #97c89b; } }
+
+@media (min-width: 60em) {
+  /* line 191, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
+  .m-short-mail--active .m-short-mail_maildate, .m-short-mail--active .m-short-mail_message, .m-short-mail--active .m-short-mail_sender {
+    color: white; } }
+@media (min-width: 60em) {
+  /* line 199, C:/Users/Yuri/Documents/Repositorios/Pessoais/teste-frontend-mail-app/src/sass/modules/_m-short-mail.scss */
+  .m-short-mail--active .m-short-mail_label {
+    border-color: transparent; } }
 
 /*# sourceMappingURL=stylesheet.css.map */
