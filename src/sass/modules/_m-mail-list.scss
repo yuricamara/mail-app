@@ -2,10 +2,12 @@
 _m-mail-list.scss
 **********************/
 .m-mail-list{
-  position: fixed;
-  overflow-y: auto;
-
   font-size: 1rem;
+
+  @include bpd{
+    position: fixed;
+    overflow-y: auto;
+  }
 
   &_header{
     height: 5.9em;

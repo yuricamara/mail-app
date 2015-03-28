@@ -24,8 +24,7 @@ $palettes: (
   @return map-get(map-get($palettes, $palette), $tone);
 }
 
-
-//Breakpoint
+//Breakpoints
 
 //"Tablet"
 @mixin bpt {

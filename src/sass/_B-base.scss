@@ -2,8 +2,6 @@
   _base.scss
 **********************/
 
-//From Meyer´s CSS Reset
-
 html, body, div, span,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,8 +23,6 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-//Others
-
 *,
 *:before,
 *:after{
@@ -39,7 +35,7 @@ body{
 }
 
 html{
-  font: 62.5% 'Raleway', sans-serif;
+  font: 62.5% 'Raleway', Arial, sans-serif;
 }
 
 abbr[title] {
