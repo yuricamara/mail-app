@@ -283,3 +283,34 @@ $mailOpenedDivingLine: 1px solid palette(primary,light20);
   }
 }
 
+.m-mail-opened--message{
+  height: 100%;
+  position: relative;
+  text-align: center;
+  &_paragraph{
+    width: 100%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    font-size: 1.6em;
+    color: white;
+    line-height: 4;
+
+    background-color: palette(secondary, base);
+
+    -webkit-transform: translateY(-50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+.m-mail-list{
+  + .m-mail-opened--message{
+    display: none;
+  }
+
+  ~ .m-mail-opened:last-child{
+    display: block
+  }
+}
