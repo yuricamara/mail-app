@@ -55,7 +55,7 @@ function(mdlMailCreation, mdlMailOpenedControl, mdlMailListVisibilty, MdlMailInf
 
     var ajaxRequest = new XMLHttpRequest();
 
-    ajaxRequest.open('GET', '/js/mails.json');
+    ajaxRequest.open('GET', '/mails.json');
 
     ajaxRequest.onreadystatechange = function(){
       if(ajaxRequest.readyState === 4 && ajaxRequest.status === 200){

@@ -46,6 +46,10 @@ module.exports = function(grunt){
             cwd:'src/images/',
             src: ['**/*','!**/*.db'],
             dest: 'public/images'
+          },
+          {
+            src: 'src/mails.json',
+            dest:'public/mails.json'
           }
         ]
       }
@@ -125,8 +129,11 @@ module.exports = function(grunt){
           'tests/images'
         ]
       },
-      build:{
+      'build.styles.css':{
         src: 'public/styles.css'
+      },
+      'build.all': {
+        src: 'public/'
       }
     },
     cachebreaker:{
@@ -193,7 +200,9 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-requirejs');
     grunt.loadNpmTasks('grunt-processhtml');
 
-    //images
+    grunt.task.run('clean:build.all');
+
+    //Images and JSON
     grunt.task.run('copy:build');
 
     //scripts.min.js
@@ -202,7 +211,7 @@ module.exports = function(grunt){
     //styles.min.css
     grunt.task.run('concat:build');
     grunt.task.run('cssmin:build');
-    grunt.task.run('clean:build');
+    grunt.task.run('clean:build.styles.css');
 
     //index.html
     grunt.task.run('processhtml:build');
