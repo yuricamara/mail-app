@@ -3,6 +3,7 @@ requirejs.config({
     //Modules
     app: 'modules/app',
     datesHandling: 'modules/datesHandling',
+    featureDetection: 'modules/featureDetection',
     mailInfosFromJSON: 'modules/mailInfosFromJSON',
     mailListVisibilty: 'modules/mailListVisibilty',
     mailOpenedControl: 'modules/mailOpenedControl',

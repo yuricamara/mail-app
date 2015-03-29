@@ -1,0 +1,6 @@
+/**********************
+_m-fallback.scss
+**********************/
+.no-svg svg{
+  @include invisible-acessible;
+}

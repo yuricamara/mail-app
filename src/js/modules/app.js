@@ -1,13 +1,32 @@
 define([
+  'featureDetection',
   'mailCreation',
   'mailOpenedControl',
   'mailListVisibilty',
   'mailInfosFromJSON'
 ],
-function(mdlMailCreation, mdlMailOpenedControl, mdlMailListVisibilty, MdlMailInfosFromJson){
+function(mdlFeatureDetection, mdlMailCreation, mdlMailOpenedControl, mdlMailListVisibilty, MdlMailInfosFromJson){
   'use strict';
 
   var objApp = {
+
+    featureDetection: function(){
+
+      if(!mdlFeatureDetection.svg()){
+        var elMailList = document.getElementById('mail-list-main'),
+            elBody = document.getElementsByTagName('body')[0],
+            elsSVG = elMailList.getElementsByTagName('svg'),
+            i = 0,
+            l = elsSVG.length;
+
+        elBody.className += 'no-svg';
+
+        for(i,l; i < l; i++){
+          var classDiv = elsSVG[i].getAttribute('data-icon');
+          elsSVG[i].insertAdjacentHTML('beforebegin', '<div class="m-fallback_icon-'+ classDiv +'"></div>');
+        }
+      }
+    },
 
     storeMailsJSON: function(mailsJSON){
       MdlMailInfosFromJson.mailsJSONArray = JSON.parse('['+mailsJSON+']');
@@ -52,7 +71,6 @@ function(mdlMailCreation, mdlMailOpenedControl, mdlMailListVisibilty, MdlMailInf
   };
 
   return function(){
-
     var ajaxRequest = new XMLHttpRequest();
 
     ajaxRequest.open('GET', '/mails.json');
@@ -63,6 +81,8 @@ function(mdlMailCreation, mdlMailOpenedControl, mdlMailListVisibilty, MdlMailInf
 
         objApp
           .storeMailsJSON(mailsJSON);
+        objApp
+          .featureDetection();
         objApp
           .buildMailList();
         objApp

@@ -328,6 +328,10 @@ $mailOpenedDivingLine: 1px solid palette(primary,light20);
   }
 
   ~ .m-mail-opened:last-child{
-    display: block
+    display: none;
+
+    @include bpd{
+      display: block;
+    }
   }
 }
