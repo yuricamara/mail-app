@@ -141,10 +141,6 @@ module.exports = function(grunt){
       }
     },
     img: {
-      'build.user-folder':{
-        src:'src/images/user/*.jpg',
-        dest:'public/images/user/'
-      },
       'build.contacts-folder':{
         src:'src/images/contacts/*.jpg',
         dest:'public/images/contacts/'
@@ -209,7 +205,6 @@ module.exports = function(grunt){
     grunt.task.run('clean:build.public-folder');
 
     //Copy and compress images
-    grunt.task.run('img:build.user-folder');
     grunt.task.run('img:build.contacts-folder');
 
     //Copy JSON
