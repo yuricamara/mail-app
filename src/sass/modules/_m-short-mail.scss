@@ -30,6 +30,9 @@ _m-short-mail.scss
     &-star{
       position: absolute;
       right: 0;
+      use{
+        fill:palette(primary,light40);
+      }
     }
 
     &-clips{

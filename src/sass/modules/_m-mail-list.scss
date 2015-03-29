@@ -66,6 +66,8 @@ _m-mail-list.scss
 
         display: block;
 
+        fill:white;
+
         @include bpd{
           display: none;
         }

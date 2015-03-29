@@ -33,16 +33,24 @@ $mailOpenedDivingLine: 1px solid palette(primary,light20);
 
   &_icon-answer{
     margin-right: 10px;
+    use{
+      fill:palette(primary,light40);
+    }
   }
 
   &_icon-star{
     position: absolute;
     top: 20px;
     left: 25px;
+    use{
+      fill:palette(primary,light40);
+    }
   }
 
   &_icon-trash{
-
+    use{
+      fill:palette(primary,light40);
+    }
   }
 
   &_title{
@@ -87,7 +95,9 @@ $mailOpenedDivingLine: 1px solid palette(primary,light20);
   }
 
   &_icon-clips{
-
+    use{
+      fill:palette(primary,light40);
+    }
   }
 
   &_menu{
@@ -280,6 +290,9 @@ $mailOpenedDivingLine: 1px solid palette(primary,light20);
 
   &_icon-reply{
     float: left;
+    use{
+      fill: white;
+    }
   }
 }
 
