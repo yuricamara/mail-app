@@ -116,6 +116,7 @@ $mailOpenedDivingLine: 1px solid palette(primary,light20);
 }
 
 .m-mail-opened_header_bottom{
+  @include clearfix;
   border-bottom: $mailOpenedDivingLine;
   padding: 1em 2em;
 
@@ -129,9 +130,9 @@ $mailOpenedDivingLine: 1px solid palette(primary,light20);
   }
 
   &_right{
-    padding-left: 45px;
+    padding: 10px 0;
 
-    display: inline-block;
+    float: right;
 
     font-size: 1.1em;
   }
@@ -285,7 +286,10 @@ $mailOpenedDivingLine: 1px solid palette(primary,light20);
   &_btn-reply-text{
     width: 41px;
 
-    float: right;
+    position: relative;
+    top: 2px;
+
+    font-size: 12px;
   }
 
   &_icon-reply{

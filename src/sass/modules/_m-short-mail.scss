@@ -184,6 +184,10 @@ _m-short-mail.scss
   }
 }
 
+.m-short-mail_label.th-label-to-do{
+  display: none;
+}
+
 .m-short-mail--active{
   @include bpd{
     background-color: palette(secondary, base);

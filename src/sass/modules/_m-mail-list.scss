@@ -11,23 +11,22 @@ _m-mail-list.scss
   }
 
   &_header{
-    height: 5.9em;
-    padding: 1.7em 0;
     width: 100%;
 
     background-color: palette(secondary,base);
 
     @include bpd{
-      padding: 4.5em 0;
-
       background-color: palette(primary,light30);
     }
   }
 
   &_header-content{
+    padding: 15.5px 0;
+
     @include bpd{
       margin: 0 auto;
-      width: 220px;
+      padding: 45px 25px 30px 0;
+      width: 175px;
 
       position: relative;
     }
@@ -39,13 +38,12 @@ _m-mail-list.scss
       margin-left: 0;
 
       position: absolute;
-      bottom: 0;
+      bottom: 34px;
       right: 0;
     }
 
     &_btn{
-        width: 17px;
-        height: 13px;
+        margin: 3px 0;
 
         float: left;
 
@@ -60,12 +58,6 @@ _m-mail-list.scss
       }
 
       &-hamburguer{
-        padding: 0;
-        height: 20px;
-        width: 20px;
-
-        display: block;
-
         fill:white;
 
         @include bpd{
@@ -82,7 +74,7 @@ _m-mail-list.scss
     text-align: center;
 
     &--unread{
-      font-size: 0.6em;
+      font-size: 0.5em;
       @include bpd{
         display: inline;
       }
