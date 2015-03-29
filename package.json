@@ -10,6 +10,7 @@
     "grunt-contrib-copy": "^0.8.0",
     "grunt-contrib-cssmin": "^0.12.2",
     "grunt-contrib-requirejs": "^0.4.4",
+    "grunt-img": "^0.1.8",
     "grunt-menu": "^1.0.1",
     "grunt-processhtml": "^0.3.7",
     "time-grunt": "^1.1.0"

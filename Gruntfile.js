@@ -42,12 +42,6 @@ module.exports = function(grunt){
       build: {
         files: [
           {
-            expand: true,
-            cwd:'src/images/',
-            src: ['**/*','!**/*.db'],
-            dest: 'public/images'
-          },
-          {
             src: 'src/mails.json',
             dest:'public/mails.json'
           }
@@ -132,7 +126,7 @@ module.exports = function(grunt){
       'build.styles.css':{
         src: 'public/styles.css'
       },
-      'build.all': {
+      'build.public-folder': {
         src: 'public/'
       }
     },
@@ -144,6 +138,16 @@ module.exports = function(grunt){
         files: {
           src: ['public/index.html']
         }
+      }
+    },
+    img: {
+      'build.user-folder':{
+        src:'src/images/user/*.jpg',
+        dest:'public/images/user/'
+      },
+      'build.contacts-folder':{
+        src:'src/images/contacts/*.jpg',
+        dest:'public/images/contacts/'
       }
     }
   });
@@ -197,23 +201,29 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-img');
     grunt.loadNpmTasks('grunt-contrib-requirejs');
     grunt.loadNpmTasks('grunt-processhtml');
 
-    grunt.task.run('clean:build.all');
+    //Delete public folder
+    grunt.task.run('clean:build.public-folder');
 
-    //Images and JSON
+    //Copy and compress images
+    grunt.task.run('img:build.user-folder');
+    grunt.task.run('img:build.contacts-folder');
+
+    //Copy JSON
     grunt.task.run('copy:build');
 
-    //scripts.min.js
+    //Create scripts.min.js
     grunt.task.run('requirejs:build');
 
-    //styles.min.css
+    //Create styles.min.css
     grunt.task.run('concat:build');
     grunt.task.run('cssmin:build');
     grunt.task.run('clean:build.styles.css');
 
-    //index.html
+    //Create index.html
     grunt.task.run('processhtml:build');
     grunt.task.run('cachebreaker:build');
   });
