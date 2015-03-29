@@ -1,12 +1,17 @@
 define([
   'mailCreation',
   'mailOpenedControl',
-  'mailListVisibilty'
+  'mailListVisibilty',
+  'mailInfosFromJSON'
 ],
-function(mdlMailCreation, mdlMailOpenedControl, mdlMailListVisibilty){
+function(mdlMailCreation, mdlMailOpenedControl, mdlMailListVisibilty, MdlMailInfosFromJson){
   'use strict';
 
   var objApp = {
+
+    storeMailsJSON: function(mailsJSON){
+      MdlMailInfosFromJson.mailsJSONArray = JSON.parse('['+mailsJSON+']');
+    },
 
     showApp : function(){
       var elLoading = document.getElementById('loading-app'),
@@ -47,13 +52,29 @@ function(mdlMailCreation, mdlMailOpenedControl, mdlMailListVisibilty){
   };
 
   return function(){
-    objApp
-      .buildMailList();
-    objApp
-      .addClickListenerToLabels();
-    objApp
-      .addClickListenerToMailList();
-    objApp
-      .showApp();
+
+    var ajaxRequest = new XMLHttpRequest();
+
+    ajaxRequest.open('GET', '/js/mails.json');
+
+    ajaxRequest.onreadystatechange = function(){
+      if(ajaxRequest.readyState === 4 && ajaxRequest.status === 200){
+        var mailsJSON = ajaxRequest.responseText;
+
+        objApp
+          .storeMailsJSON(mailsJSON);
+        objApp
+          .buildMailList();
+        objApp
+          .addClickListenerToLabels();
+        objApp
+          .addClickListenerToMailList();
+        objApp
+          .showApp();
+      }
+    }
+
+    ajaxRequest.send(null);
+
   };
 });

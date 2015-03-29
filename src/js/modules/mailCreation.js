@@ -1,9 +1,8 @@
 define([
   'text!shortMail',
   'text!openedMail',
-  'text!mails.json',
   'mailInfosFromJSON'
-],function(shortMailTpl, openedMailTpl, mailsJSON,MdlMailInfosFromJson){
+],function(shortMailTpl, openedMailTpl, MdlMailInfosFromJson){
   'use strict';
 
   var objMailCreation =  {
@@ -36,7 +35,7 @@ define([
 
     createShortMails : function(){
 
-      var l = MdlMailInfosFromJson.JsonLength,
+      var l = MdlMailInfosFromJson.JsonLength(),
           i = 0,
           shortMailTplStrParsed = "",
           shortMailStr = "";
