@@ -42,8 +42,8 @@ module.exports = function(grunt){
       build: {
         files: [
           {
-            src: 'src/mails.json',
-            dest:'public/mails.json'
+            src: 'src/db/mails.json',
+            dest:'public/db/mails.json'
           }
         ]
       }

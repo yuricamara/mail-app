@@ -73,7 +73,7 @@ function(mdlFeatureDetection, mdlMailCreation, mdlMailOpenedControl, mdlMailList
   return function(){
     var ajaxRequest = new XMLHttpRequest();
 
-    ajaxRequest.open('GET', '/mails.json');
+    ajaxRequest.open('GET', '/db/mails.json');
 
     ajaxRequest.onreadystatechange = function(){
       if(ajaxRequest.readyState === 4 && ajaxRequest.status === 200){
