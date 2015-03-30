@@ -18,7 +18,7 @@ $labelsColors: (
   social #e1c557,
   family #8bcbca,
   friends #b48cec,
-  to-do white
+  to-do transparent
 );
 
 @each $name,$value in $labelsColors{
@@ -33,5 +33,11 @@ $labelsColors: (
         background-color: $value;
       }
     }
+}
+
+.th-label-to-do{
+  @include bpd{
+    background-color: white;
+  }
 }
 
