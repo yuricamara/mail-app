@@ -82,13 +82,13 @@ function(mdlFeatureDetection, mdlMailCreation, mdlMailOpenedControl, mdlMailList
         objApp
           .storeMailsJSON(mailsJSON);
         objApp
-          .featureDetection();
-        objApp
           .buildMailList();
         objApp
           .addClickListenerToLabels();
         objApp
           .addClickListenerToMailList();
+        objApp
+          .featureDetection();
         objApp
           .showApp();
       }

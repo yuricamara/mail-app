@@ -305,6 +305,7 @@ $mailOpenedDivingLine: 1px solid palette(primary,light20);
 }
 
 .m-mail-opened--message{
+  border-color: transparent;
   height: 100%;
   margin-left: 310px;
 
@@ -313,8 +314,6 @@ $mailOpenedDivingLine: 1px solid palette(primary,light20);
   text-align: center;
 
   &_paragraph{
-    // border-left: 50px solid palette(primary,light20);
-    // border-right: 50px solid palette(primary,light20);
     width: 100%;
 
     position: absolute;

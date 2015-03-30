@@ -4,3 +4,39 @@ _m-fallback.scss
 .no-svg svg{
   @include invisible-acessible;
 }
+
+.m-fallback_icon-hamburguer,
+.m-fallback_icon-clips,
+.m-fallback_icon-star{
+  background-image: url("images/fallback-sprite.png");
+}
+
+.m-fallback_icon-hamburguer{
+  height: 18px;
+  width: 25px;
+}
+
+.m-fallback_icon-clips{
+  top: 25px;
+
+  height: 15px;
+  width: 15px;
+
+  background-position: 14px 0;
+}
+
+.m-fallback_icon-star{
+  height: 15px;
+  width: 15px;
+
+  top: 40px;
+
+  background-position: 27px 0;
+}
+
+.m-fallback_icon-clips,
+.m-fallback_icon-star{
+  position: absolute;
+  right: 0;
+}
+

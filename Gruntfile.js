@@ -144,6 +144,10 @@ module.exports = function(grunt){
       'build.contacts-folder':{
         src:'src/images/contacts/*.jpg',
         dest:'public/images/contacts/'
+      },
+      'build.css-images-folder':{
+        src:'src/css/images/*.png',
+        dest:'public/images/'
       }
     }
   });
@@ -206,6 +210,7 @@ module.exports = function(grunt){
 
     //Copy and compress images
     grunt.task.run('img:build.contacts-folder');
+    grunt.task.run('img:build.css-images-folder');
 
     //Copy JSON
     grunt.task.run('copy:build');
