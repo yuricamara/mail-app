@@ -7,8 +7,15 @@ define(function(){
         }else {
           return false;
         }
+    },
+    matchMedia : function(){
+      if(!window.matchMedia){
+        return true;
+      }else{
+        return false;
+      }
     }
-  }
+  };
 
   return objFeatureDetection;
 

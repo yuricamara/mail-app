@@ -1,4 +1,4 @@
-define(['mailCreation'],function(mdlMailCreation){
+define(['mailCreation','featureDetection','polyfills'],function(mdlMailCreation, mdlFeatureDetection, mdlPolyfills){
 
   var objMailOpened =  {
 
@@ -13,6 +13,11 @@ define(['mailCreation'],function(mdlMailCreation){
     },
 
     openCloseMail: function(){
+      //MUST be here (feature detection)
+      if(mdlFeatureDetection.matchMedia()){
+        mdlPolyfills.mediaQuery();
+      }
+
       var desktopSize = window.matchMedia('(min-width:60em)');
 
       if(!desktopSize.matches){

@@ -8,6 +8,7 @@ requirejs.config({
     mailListVisibilty: 'modules/mailListVisibilty',
     mailOpenedControl: 'modules/mailOpenedControl',
     mailCreation: 'modules/mailCreation',
+    polyfills: 'modules/polyfills',
 
     //Templates
     openedMail: 'templates/opened-mail.html',
