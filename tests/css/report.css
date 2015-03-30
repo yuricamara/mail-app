@@ -1,5 +1,9 @@
-.l-wrap {
+.l-wrap{
   display: none !important;
+}
+
+.m-loading-app{
+  display: none;
 }
 
 #mocha-report > .suite > h1{

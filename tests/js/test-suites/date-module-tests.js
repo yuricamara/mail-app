@@ -6,7 +6,7 @@ define(['datesHandling','chai'],function(date,chai){
 
     it('should return an object if it´s passed for it a date in dd/mm format.', function(){
 
-      var formattedDate = date('11/10/2014');
+      var formattedDate = date.formatDate('11/10/2014');
 
       expect(formattedDate).to.be.an('object');
 
@@ -14,14 +14,14 @@ define(['datesHandling','chai'],function(date,chai){
 
     it('sould return an empty object if it is passed for it an empty string.', function(){
 
-      var unformattedDate = date('');
+      var unformattedDate = date.formatDate('');
 
       expect(unformattedDate).to.be.empty;
 
     });
 
     describe('shoud return an object with', function(){
-      var formattedDate = date('11/10/2014');
+      var formattedDate = date.formatDate('11/10/2014');
 
       it('monthNumber, monthShortString and day keys.', function(){
         expect(formattedDate).to.have.all.keys('monthNumber','monthShortString','day');

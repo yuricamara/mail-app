@@ -1,20 +1,30 @@
 require.config({
   paths: {
-    //Libs
-    chai : '/node_modules/chai/chai',
-    mocha : '/node_modules/mocha/mocha',
+    //////////// APP ////////////
+
+    //Modules
+    app: 'modules/src-app',
+    datesHandling: 'modules/src-datesHandling',
+    featureDetection: 'modules/src-featureDetection',
+    mailInfosFromJSON: 'modules/src-mailInfosFromJSON',
+    mailListVisibilty: 'modules/src-mailListVisibilty',
+    mailOpenedControl: 'modules/src-mailOpenedControl',
+    mailCreation: 'modules/src-mailCreation',
+    polyfills: 'modules/src-polyfills',
+
+    //Templates
+    openedMail: 'templates/src-opened-mail.html',
+    shortMail: 'templates/src-short-mail.html',
 
     //Plugins
     text:'../vendors/bower_components/text/text',
 
-    //Templates
-    shortMail: 'templates/src-short-mail.html',
+    //////////// TEST ///////////
 
-    //Modules to test
-    app: 'modules/src-app',
-    datesHandling : 'modules/src-datesHandling',
-    mailListVisibilty: 'modules/src-mailListVisibilty',
-    shortMailCreation : 'modules/src-shortMailCreation',
+    //Libs
+    chai : '/node_modules/chai/chai',
+    mocha : '/node_modules/mocha/mocha',
+
 
     //Suites
     dateModuleTests : 'test-suites/date-module-tests',

@@ -1,8 +1,8 @@
-define(['shortMailCreation','chai'], function(shortMailCreation, chai){
+define(['mailCreation','chai'], function(mailCreation, chai){
 
   var expect = chai.expect;
 
-  var mailList = shortMailCreation();
+  var mailList = mailCreation.createShortMails();
 
   describe('Short Mail Creation module', function(){
     it('should return a string.', function(){
