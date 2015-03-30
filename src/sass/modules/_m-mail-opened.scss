@@ -33,6 +33,9 @@ $mailOpenedDivingLine: 1px solid palette(primary,light20);
 
   &_icon-answer{
     margin-right: 10px;
+
+    cursor: pointer;
+
     use{
       fill:palette(primary,light40);
     }
@@ -48,6 +51,7 @@ $mailOpenedDivingLine: 1px solid palette(primary,light20);
   }
 
   &_icon-trash{
+    cursor: pointer;
     use{
       fill:palette(primary,light40);
     }
