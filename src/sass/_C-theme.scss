@@ -3,7 +3,9 @@ _theme.scss
 **********************/
 
 .th-aside{
-  background-color: palette(primary,base);
+  @include bpd{
+    background-color: palette(primary,base);
+  }
 }
 
 .th-mail-list{

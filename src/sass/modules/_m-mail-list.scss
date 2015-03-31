@@ -13,9 +13,14 @@ _m-mail-list.scss
   &_header{
     width: 100%;
 
+    position: fixed;
+    z-index: 1;
+
     background-color: palette(secondary,base);
 
     @include bpd{
+      position: static;
+
       background-color: palette(primary,light30);
     }
   }
@@ -83,6 +88,14 @@ _m-mail-list.scss
     @include bpd{
       color: palette(primary,darkest);
       font-size: 2.8em;
+    }
+  }
+
+  &_wrap{
+    padding-top: 60px;
+
+    @include bpd{
+      padding-top: 0;
     }
   }
 

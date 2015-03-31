@@ -7,15 +7,20 @@ $mailOpenedPaddingRight: 20px;
 $mailOpenedDivingLine: 1px solid palette(primary,light20);
 
 .m-mail-opened{
+  height: 100%;
   border-left: $mailOpenedDivingLine;
   margin-left: 330px;
 
   display: none;
 
+  background-color: white;
+
   font-size: 1.2rem;
 
   @include bpd{
     display: block;
+
+    background-color: transparent;
   }
 }
 

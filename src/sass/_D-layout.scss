@@ -5,6 +5,11 @@ _layout.scss
 .l-wrap{
   @include clearfix;
   height: 100%;
+  background-color: palette(primary,base);
+
+  @include bpd{
+    background-color: transparent;
+  }
 }
 
 .l-aside{

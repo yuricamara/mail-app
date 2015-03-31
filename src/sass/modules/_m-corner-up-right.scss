@@ -2,15 +2,17 @@
 _m-corner-up-right.scss
 **********************/
 .m-corner-up-right{
-  padding: 10px 17px;
+  padding: 9.5px 17px;
 
   position: relative;
 
   background-color: palette(primary, dark);
 
   @include bpd{
-
     border-bottom: 1px solid palette(primary,light);
+    height: auto;
+
+    position: relative;
 
     background-color: transparent;
   }
