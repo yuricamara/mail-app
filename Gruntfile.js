@@ -24,8 +24,8 @@ module.exports = function(grunt){
             }
           },
           {
-            src: 'src/js/mails.json',
-            dest:'tests/js/mails.json'
+            src: 'src/db/mails.json',
+            dest:'tests/db/mails.json'
           },
           {
             src: 'src/css/stylesheet.css',

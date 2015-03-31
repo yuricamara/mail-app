@@ -12,3 +12,4 @@ tests/index.html
 tests/js/mails.json
 tests/js/modules/
 tests/js/templates/
+tests/db/
