@@ -88,19 +88,17 @@ _m-mail-list.scss
 
   &_zero-mails{
     margin: 2em auto 0;
-    width: 85px;
+    width: 90px;
 
     font-size: 1.4em;
-    line-height: 1.2em;
-    text-indent: 5px;
 
     &:before{
       content: " ";
-      @include square(15px);
+      @include square(12px);
 
-      display: block;
+      margin-right: 5px;
 
-      float: left;
+      display: inline-block;
     }
   }
 }

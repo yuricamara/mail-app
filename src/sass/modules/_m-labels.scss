@@ -52,13 +52,10 @@ _m-labels.scss
 
       content: "";
 
-      display: inline-block;
-
       @include bpd{
         @include square(10px);
 
         margin: 1.1em 0;
-
       }
     }
   }
