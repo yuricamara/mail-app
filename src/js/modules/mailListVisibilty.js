@@ -44,8 +44,12 @@ define(function(){
 
     showAll: function(){
       var elsShortMailList = objMailListVisibilty.elsShortMailList,
+          elZeroMails = document.getElementById('mail-list-zero-mails'),
           i = 0,
           l = 0;
+
+      elZeroMails
+        .setAttribute('hidden','');
 
       for(i = 0, l = elsShortMailList.length; i < l ; i++){
         elsShortMailList[i]
