@@ -1,4 +1,29 @@
-Etapas Iniciais para Trabalhar com este Projeto
+Introdução
+===============
+
+Interface de um aplicativo de e-mail responsivo.
+
+[App em produção](http://www.yuricamara.com.br/projetos/mail-app/)
+
+Features
+--------------
+
+* Filtragem da inbox por labels
+* Leitura de e-mail
+
+Tecnologias
+--------------
+
+* Gerenciamento de pacotes com Bower.
+* Automatização de tarefas com Grunt.
+* CSS com pré-processador SASS.
+* Sprites com SVG.
+* Programação com Javascript puro.
+* Modularização com RequireJS.
+* Teste unitário com Mocha e Chai.
+
+
+Scaffolding
 ===============
 
 Grunt
@@ -149,4 +174,4 @@ Manual do Usuário
 * Clique uma vez em uma label para filtrar a lista de e-mails por ela.
 * Clique uma segunda vez na label que está impondo uma filtragem para mostrar todos os e-mails novamente.
 
-[App em produção](http://www.yuricamara.com.br/projetos/mail-app/)
+
