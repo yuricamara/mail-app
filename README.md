@@ -3,7 +3,7 @@ Introdução
 
 Interface de um aplicativo de e-mail responsivo.
 
-[App em produção](http://www.yuricamara.com.br/projetos/mail-app/)
+[App em produção](http://yuricamara.com.br/mail-app/)
 
 Features
 --------------
