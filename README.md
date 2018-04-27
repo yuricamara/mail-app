@@ -1,7 +1,7 @@
 Introdução
 ===============
 
-Interface de um aplicativo de e-mail responsivo.
+Interface responsiva de um aplicativo de e-mail.
 
 [App em produção](http://yuricamara.com.br/mail-app/)
 
